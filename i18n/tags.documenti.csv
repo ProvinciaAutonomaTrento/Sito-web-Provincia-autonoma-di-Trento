@@ -1,0 +1,95 @@
+id,ita-IT,ger-DE,eng-GB
+e520190f00b91238ac1b53cda99ddf53,Documenti,Dokumente,Document
+b74d6f990f31e0e2bd00cb7a2f3277ce,"Aree contrattazione collettiva",,
+4f7279fb43ab893f6d6dc51126b355c4,"Autonomie locali",,
+3fac122b3b93e2eb35e36a007db835e5,"Corpo permanente dei Vigili del fuoco",,
+a99cf6313f4758f6e665a7e9cdc168b5,Direttori,,
+327184f7a84e9b94111d97fd297e12fe,Dirigenza,,
+34537f2bfd46871328fb0d5c4a316598,"Non dirigenziale",,
+225dc1ace08ed477ff8afd52b1c97d6e,"Personale ricercatore",,
+2db5cbf1302bafdd476e262d1f1df7d0,Ricerca,,
+8d583dbb68ddc33c77062c15bc31c283,Sanità,,
+85802660366e4b18e902cc06d828955c,Scuola,,
+893cde644a8907fbb9a5d377d0f43ce0,Università,,
+9aa90f2439c28db5ca9302e4ebe74cc9,"Comparti contrattazione collettiva",,
+271e9d5a60a804cb91427bbcb2bedc08,"Autonomie locali",,
+0eab323f6603814591f329bcbe98d6af,Ricerca,,
+b8fa39c78e0567b5aa3644e394e2fe74,Sanità,,
+bcc96c7622047c92fad91be1fa39bfc0,Scuola,,
+073b2223640252aa0f34d4e801f5fb4e,Formati,Formate,Formats
+8d37e8ae71db5401fdf4f333528dc395,CSV,CSV,CSV
+8920664b822f845ba68e438af45a72c9,DOC,DOC,DOC
+04c652c03b5ff1dd4c866373164532df,DOCX,,
+f6a96ec776c4e1f0204cae2bc16d4003,GML,,
+0069d0caba0666c55fefcfa583837740,GRID_ASCII,,
+95303e03feef4d015cd5e193ee6926af,GeoJSON,,
+c58143693130b330b217741b6c98df6f,JPEG,,
+d6cc1c5436dee8049315d21028670034,JSON,JSON,JSON
+2bfe746772d2825506aba4ec63edacfb,JSON-LD,JSON-LD,JSON-LD
+a02c9d8ba69158a27db4ddd3b3f3c373,KML,,
+4e1abf9da0b73798f069b8344529d7b8,KMZ,,
+26c08e0a01c841307534cb79e290e02e,ODS,,
+4222a069fdf501029692bfd8d369e7fc,ODT,ODT,ODT
+c20f1e23bf687534db174f3c17330bcd,PDF,PDF,PDF
+2ceaff38ea02914e44db0b39e4af1a1f,PNG,,
+e45db6d5ea3015a8973904ef26f2fcfa,RDF,,
+a739de4b44735c17fad392394951f866,TIFF,,
+88a21dd21f2648f66fde814c7e4be72c,TXT,,
+xls7957b35e6e9cabd979b6ef4035891,XLS,XLS,XLS
+f9bebdda0bfdad3117553e460422858d,XLSX,,
+fba7957b35e6e9cabd979b6ef4035891,XML,XML,XML
+f2c21b186d6e299216750c37321fbca4,ZIP,,
+e1240e6244d1839a660d76a8fd012b8f,Legislatura,,
+38f75c65a880b5837c23b2d0684691b6,"XI legislatura",,
+f4c9dd46e5ec4af092ed1f9f592c0c2e,"XII legislatura",,
+8a7e81625a94dc8206fe0227ea376304,"XIII legislatura",,
+9543bb643cf2cb442ee54363d7eb7913,"XIV legislatura",,
+881a9a8f667b1b826e0c11ad14de8cd2,"XV legislatura",,
+d9ffb4135c2b86e96a08a37ada8dcac9,"XVI legislatura",,
+3318dfb90ae011413811769c2d77bdec,"XVII legislatura",,
+801e7987fe4245cd95bb8daae94a149a,"XVIII legislatura",,
+38f30fdce7db55e513b943197d0c3bea,"Periodo di riferimento",,
+7b2ac1b993039deff4483a0a67f90ab6,1997,,
+4722f7b0d78e91c770cb9d442eae0e45,1998-2001,,
+1646dbfa96a5fc89fd797c842fe3e5b4,2002-2005,,
+dc826a831b75f8a8f75ece00d80a60cd,2006-2009,,
+9e0319d2b7178e8f12c87057e6da0231,2016-2018,,
+1d5853e1ca2b133c0970f163482245be,2019-2021,,
+202cd8a7d24dece0ff6a26633cd39317,2022-2024,,
+95e24cd3cba0fd43c43bac0b1daf0580,"Stato procedura",,
+a5b2604735e3a273a143ba948c104505,Concluso,,
+b2437a9582d275d3afa3ef8f7858e330,"In atto",,
+e55bbea2f8b1c4f52d08ed03a2266dcb,Nuovo,,
+ccfe1d0a4572ea4a42fc6bf943c38c80,"Tipo di documento",Dokumententyp,"Type of document"
+74d9b8a5382dfebaffe422a0c28fc17a,"Accordo o contratto","Vereinbarungen zwischen Körperschaften","Agreements between entities"
+6d05d12bb59bc374e61a71fad060b944,"Atto amministrativo",,
+b4cfb68f37c75095702fa46048373cbc,Decreto,Dekret,Decree
+5cf98dba69d46a79d7afa5fcbeea364a,Deliberazione,Beschluss,Deliberation
+a5994c0e99b79cd4ca5ed1285135a461,Determinazione,Verfügung,Determination
+e1d14548c0079205ca387e42a8fdd9ca,Ordinanza,Verordnung,Order
+e91b5b4af43049b0eeb5900de94cc6aa,Provvedimento,,
+e004f55bf7843d24aa778be5e2d36fa3,"Atto normativo","Regulatorische Handlungen","Regulatory acts"
+x92c5ef29de0dcbf72d47ec1ae5eab78,"Normativa europea",,
+y92c5ef29de0dcbf72d47ec1ae5eab79,"Normativa nazionale",,
+r92c5ef29de0dcbf72d47ec1ae5eab81,"Normativa provinciale",,
+z92c5ef29de0dcbf72d47ec1ae5eab80,"Normativa regionale",,
+14a87b8333e7120f3147b658a73c67ee,"Bando o avviso pubblico",,
+94a87b8333e7120f3147b658a73c67e3,"Bando o avviso di concorso o selezione",,
+74a87b8333e7120f3147b658a73c67e1,"Bando o avviso di gara",,
+84a87b8333e7120f3147b658a73c67e2,"Bando o avviso per contributi e vantaggi economici",,
+72a7881a385a55638494de7baea056d5,"Documento attività politica",,
+111e89f8234e27ce900d8c0f9fa24932,"Documento di programmazione",,
+c940fe502423fb19dc002452816ca071,"Documento di programmazione generale",,
+1b2b34546988107e410f3d7f5b989804,"Documento di programmazione settoriale",,
+2bc014486bf3815be54ed8a41c761817,"Documento di supporto",,
+a93797b5fd2fe46130ddf932359c4b98,"Circolare, comunicazione, informativa",,
+4aff6b6c42e2e74a93421f1098d7250c,"Documentazione tecnica, linee guida, manuali",,
+5917307068f4322d6df79ae83ea64223,"Rapporto, relazione, studio",,
+03a019709ee42c568710c1142c5bd50b,"Slide, presentazione, pieghevole, locandina",,
+b08d234e6c3750b4052262bc7ed1c478,"Verbale, resoconto",,
+2f9fac3ebfee5aec253c6ba8b6a42e68,Modulo,Formulare,Forms
+ad17bce39264da0e477878a72b94ef34,Pubblicazione,Veröffentlichung/Infoblätter,Publication
+292c5ef29de0dcbf72d47ec1ae5eab82,"Tipologia di bando di gara","Art der Ausschreibung","Type of tender notice"
+faf80ecafe40a37036fcd80d1f7a8aa4,Forniture,Lieferungen,Supplies
+1dbc7ff9bbc590a751b57dfe95c337a1,Lavori,Arbeiten,Works
+e456c7efa8949304c91f43797e8b720b,Servizi,Dienstleistungen,Services

@@ -1,0 +1,93 @@
+id,ita-IT,ger-DE,eng-GB
+a2b6dff1f3b039712e5c6bb43a1fb673,Eventi,Veranstaltungen,Events
+2468bfe209e8f4c3a4db7b59f2f64414,"Target utenti",Zielgruppe,"Target users"
+4afbc65c32c044f08e9199b46c392d77,"Età utenti",Altersgruppen,"Users age"
+b1fb6cf2e54603f68d14a1fe91b8e271,"0-3 anni","0-3 Jahre","0-3 years"
+d0528d3172008adbfd13aef4b6764083,"11-14 anni","11-14 Jahre","11-14 years"
+24c293490cb6324877ecb10226570405,"14-17 anni","14-17 Jahre","14-17 years"
+0ede0073c0e20c8868047ea0eb573181,"18-21 anni","18-21 Jahre","18-24 years"
+0144946e99438e39ad42ad38a16fc9aa,"3-5 anni","3-5 Jahre","3-5 years"
+ae05b8d392ed04444daf2d28369355e8,"6-8 anni","6-8 Jahre","6-8 years"
+b115669c9b52f16f2e88615aef1b8f96,"9-11 anni","9-11 Jahre","9-11 years"
+87a2d17fb53cacb0d6f092593ecdae4a,"Oltre 65 anni","Über 65 Jahre","over 65 years"
+fb02904455c40fa1375d39783ad3dd9b,"Fasce generali di popolazione","Allgemeine Bevölkerungsgruppen","General population groups"
+8dcb7cb9ec9b7244556499df5089b3e8,Adulti,Erwachsene,Adults
+75f34b4cc6f3df60eb5787ba49dcad7f,Anziani,Senioren,"Elderly people"
+41fa0399ec8f928fc6064c5b732830e2,Bambini,Kinder,Children
+d70af0701ecf8cee2686c7844c1453bf,Famiglie,Familien,Families
+1b52665a286c8f0a3d7e01d052f0ce8f,Giovani,Jugendliche,Young
+4c6ccc30895454b2d9174a9dbd5f5ecb,"Tematiche eventi","Themen der Veranstaltung","Thematic events"
+713354b882632278925a7e64c5237507,"Convegno / Conferenza",,
+cb91ded4193044f742e8453d8341200c,"Evento culturale","Kulturelle Veranstaltung","Cultural event"
+8a54645a93c508a801579a75bd6a5c10,"Conferenza e summit","Konferenz, Treffen","Conference and summit"
+6b221f4c6fd4247a34b7c423b7d4415b,Congresso,Kongress,Congress
+2c94a5c65e8b12e54a993da5172ecc0f,Convegno,"Tagung / Konferenz",Conference
+00306cbed8aeb40925efde7b2479a6c1,Vertice,Summit,Summit
+545466ca72cc5c6bace8e9ebfe085108,"Evento di formazione",Schulungsveranstaltung,"Training and workshop event"
+589c8fb1be3346bed0ebd8034fee93a1,Corso,Kurs,Course
+f7d97c3d92fb0ab7d008e210e9b10e86,Laboratorio,Workshop,Workshop
+f14a5e723b2d29022eb5e079d833f8f1,"Presentazione libro",Buchvorstellung,"Book presentation"
+3e87ceda782a71d8f26ec6ee5fc54da6,"Scuola estiva / invernale",Sommer-/Winterschule,"Summer/Winter school"
+79359fa693e23964541d55efd1c65799,Seminario,Seminar,Seminar
+ad14b55c8b135aa1cd5f9e25a591a909,Webinar,Webinar,Webinar
+8388af1a7222a7755df27c8144ed1d81,"Giornata informativa",Informationstag,"Info day"
+3cd1db3b6ffeb00ba404c0e4acd90536,"Giornata aperta","Tag der offenen Tür","Open day"
+59f248d113d55390a225f92fc7ce0a09,"Manifestazione artistica","Künstlerisches Ereignis","Arts exhibition"
+29cd3677036f7f3b067ea710b6bd7648,Festival,Festival,Festival
+6a936915cc8c4b32e83cb0e2ddfa0c69,"Lettura (pubblica)","Lesen (öffentlich)","(Public) reading"
+ad53f88a5117a02edc83c4df24bbe0b6,"Manifestazione musicale","Musikalisches Ereignis","Music event"
+fbf979a2da92c236699f3fa3be779b47,Mostra,Ausstellung,Exhibition
+d4096476d04df6078d2568dbb46ba7b1,"Proiezione cinematografica",Filmvorführung,"Cinema projection"
+3bba7ad5caba5f3b6920810490f38a14,"Spettacolo di danza",Tanzveranstaltung,"Dance show"
+ffd4286c7d1337441d61f5b35804e259,"Spettacolo teatrale",Theateraufführung,"Theatral show"
+727c63afd6925cb6aff2df901cebf738,"Visita guidata","Geführte Besichtigungstour","Guided tour"
+f95306130e69dcf69197b0ef77e87834,"Visita libera","Kostenloser Besuch","Free tour"
+470be5bfb9952ec3360ffd61a404813e,"Evento d'affari o commerciale","Geschäftliche oder kommerzielle Veranstaltung","Business event"
+dceaa61faad0a5ba1a8ecff7c39a9d32,"Evento stagionale commerciale","Saisonale kommerzielle Veranstaltung","Seasonal business event"
+79bc58310fdd118c2700e73c49a4beb0,"Vendita di fine stagione","Ausverkauf zum Saisonende",Sale
+446768489ad8c95bfa803f3dcd02fe5c,"Fiera / Salone","Messe / Ausstellung",Exhibition
+35e8d62fd9108748f7c94943a59b082d,"Esposizione / Esposizione globale","Messe / Weltweite Ausstellung","Expo global"
+cf77fb1c996cb1d84a9d30c0809b9577,"Fiera / Salone","Messe / Ausstellung",Exhibition
+5f42585685fb9b5895c62ea6a3d5b6c8,"Riunione d'affari",Geschäftstreffen,"Business meeting"
+75f950c9880c17239d5c20dc8e8c7275,Convention,Konvention,Convention
+6601b813bfa049cd38a5053f4c51cff5,"Riunione d'affari",Geschäftstreffen,"Business meeting"
+bd270c182b921bbb1659792488e54630,"Tavola rotonda","Runder Tisch","Round table"
+b47352b897deac8774b4aa44624abf55,"Evento politico","Politisches Ereignis","Political event"
+2a9076e2370bff56c0163f99d21006cd,"Incontro politico","Politisches Treffen","Political meeting"
+33cd2100063e955215faef3926c1c935,"Comizio elettorale",Wahlkundgebung,"Electoral speech"
+5608d24d93f47a661a5dc5dfe5866964,"Congresso / riunione di partito","Kongress / Parteiversammlung","Party congress / meeting"
+dc33d1eeb3aa80b42d2b37c3df72fa4c,"Corteo / sciopero","Demonstration / Streik","Political procession / strike"
+34a5a5fdddc77355d7925f4358a93985,"Evento sociale","Gesellschaftliches Ereignis","Social event"
+95af06bcf6fca85d4b26ea48a6a0200b,"Concorso e cerimonia","Wettbewerb und Zeremonie","Competition and award ceremony"
+27167b37a996c017dfe4d3aa830e1f1a,Cerimonia,Zeremonie,Ceremony
+7d81c6e286fbd4fc9fd2100fb2e9fc45,"Concorso / Competizione","Wettbewerb / Wettkampf",Competition
+837c5d77e18098759cba01fa5274da9e,"Dibattito pubblico","Öffentliche Debatte","Public Debate"
+1cbd3a7ef7e622d28948af2eeade77a2,"Dibattito / Dialogo pubblico","Debatte / Öffentlicher Dialog","Public Debate / Dialogue"
+5769352ba814d16f8e7180e0c3cbf419,Forum,Forum,Forum
+3caea41d0e1ae20804d78d5ff54db6c1,"Evento religioso","Religiöses Ereignis","Religious event"
+8942ac23744f49832e425672629ae35f,"Celebrazione religiosa","Ökumenische Feier","Religious Celebration"
+ad45c0cb1ae4f77113f1a49f31feb6e7,Giubileo,Jubiläum,Jubilee
+42c566e0ed8ab2d53c774e797eb1b536,"Lettura religiosa","Religiöse Lesung","Religious reading"
+aa3728c2ede4bb212e72770aa8c28f00,Processione,Prozession,Procession
+3ce34947431acf524c6942812178349c,"Raduno religioso","Religiöse Versammlung","Religious Gathering"
+bb5817808b72e4a9f873d6a47d6441c8,Santificazione,Heiligsprechung,Sanctification
+5b3cb700749dbe2d58c2f55079432bc9,"Udienza giubilare",Jubiläums-Audienz,"Jubilee hearing"
+b73fe93fca193496934be4abb5ed120d,"Incontro con esperti","Treffen mit Experten","Partner meeting"
+82c2bfaa10b7b97de31b5e5198cbd44d,"Hackathon / Datathon","Hackathon / Datathon","Hackathon / Datathon"
+6c782ba0df4999faea8166e8505a41b3,"Riunione esperti","Experten- / Interessenvertreter-Treffen","Experts / stakeholdesr meeting"
+478b5b156815c44b583b3c53fdced125,"Raduno di comunità",Gemeinschaftsversammlung,"Community gathering"
+e8cd330be8613bdd6a69fdd88ecacd49,Commemorazione,Gedenkfeier,Commemoration
+f56a17cd69153d360c7b3c205391071c,"Festa patronale / Festa dei santi","Patronatsfest / Allerheiligen","Patronal Feat / Saint Feast"
+57a8ca45796d1bc59cebab9df878912f,"Marcato / Mercatino",Markt,"Market / Street market"
+ae7523083fa954544734601b70f505aa,Sagra,Sagra/Volksfest,"Popular feast"
+1d44cf994f38819bed141c1e442c5b49,Sfilata,Umzug,Parade
+48ddd8d83d29c6310cfbb58ca5fb0b90,"Torneo storico / Palio","Historisches Turnier / Palio","Historical Tournament"
+fdbabade9b6f9eeef3e0da95edf852d9,"Evento sportivo","Sportliche Veranstaltung","Sport event"
+08e4d12aea446960ceeb76720aa473e5,"Manifestazione sportiva","Sportliche Veranstaltung","Sport show"
+0decaceddba42898e493cbc5ceca98f5,Corsa,Rennen,Race
+c6fd3ca2a890e20d6bfe177e40374072,Escursione,Ausflug,Excursion
+6824435b3d769319b8ac00d4b37aee90,"Galà sportivo",Sport-Gala,"Sport gala"
+93db6a44363c3dbb40f0054271304317,"Gara / Torneo / Competizione","Spiel / Turnier / Wettbewerb","Sport competition"
+2646f06e4a1ff763690e38bd9d2ad96c,Partita,Match,Match
+69f9bc409c048609dd580645321e2eb0,"Raduno sportivo",Sport-Treffen,"Sport gathering"
+f27542daa469d54a69c0a3d376d4e482,"Riunione esperti / portatori interesse",,

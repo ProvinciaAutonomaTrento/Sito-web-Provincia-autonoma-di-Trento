@@ -1,0 +1,60 @@
+id,ita-IT,ger-DE,eng-GB
+766cbf278451d07c053f59cbf0e5654d,Dataset,Datensatz,Dataset
+75c5d53178d2a376f837a465043ec818,"Frequenza aggiornamento",Aktualisierungsfrequenz,"Update frequency"
+514a1529215aa74be1b51990045c1f87,Annuale,Jährlich,annual
+d379d93de76eaa2ffedf66f383aa823d,"In continuo aggiornamento","Wird laufend aktualisiert","Constantly updated"
+f1714ef503d783d51ad6244a1eb48145,Irregolare,,
+efa7622bbf070770193f0b2dfdc603a6,Mensile,Monatlich,monthly
+229d57bb64922ee97f67272ee525ae78,"Non viene aggiornato (mai)","Nicht aktualisiert (nie)","It is not updated (ever)"
+5d29c434af9ee30f6c6473d962c63e59,Quotidiano,Täglich,Daily
+e64df8acd181e9667d918b4e202d43dd,Sconosciuto,,
+1c898932188207d9abc4fdbcfafea346,Semestrale,,
+b9d7af7b3ef28199592d73601eda0658,Settimanale,Wöchentlich,Weekly
+fac3d6234813254d965a552a36fda97c,Trimestrale,,
+73d86bedbf2f3aad67ce2fef75f4b9c7,"Lingue dataset",,
+bac7577f70d9221a601d208087290773,Inglese,,
+e456570601cf76432d9b309ddf1fbd07,Italiano,,
+1322ba8f0a33f9bddf232a515569b017,Tedesco,,
+7b1a88eebeb9bbab0cf97bc5c4ed9e33,"Parole chiave dataset",,
+fb7965fd3b4512113e635dc4df500e0d,Europa,,
+ad85cf33ad9dcdc61721d5b3a8866e2b,Italia,,
+157f463803d09df925185ae22a8ade22,ambiente,,
+a2dbe546180a7e4b72ce13e2935ab6ef,artigianato,,
+070a28a9ff447172eb692f8d2dee30f9,benessere,,
+2e3666372465d7b0e478d72f7baf73b1,commercio,,
+c16467562fa7db33638d58d11266641b,comuni,,
+9a2868c2086551f80008b0825900650a,cultura,,
+724eb8021e2d300e7d93e548612efeb3,"dati dinamici",,
+f80e890a9df72ce5848b1b625aa4275e,"dati elevato valore",,
+ed925f985f433aaaa1d55866cf31e735,"dati georeferenziati",,
+9ff0f11b1d4136111b85be7005f19041,depurazione,,
+0b10cf2a381dea34d7530cae55d7245d,digitalizzazione,,
+2df2543e935395e3188da2e8c8fcf9b3,energia,,
+a758ef9800248bd360e232ddc69b4f5a,lavoro,,
+8e66f5d84fe140d71cfc21f9836f2a48,meteo,,
+bde04913afc15331170b14743946ba16,opengov,,
+03942cb3c45c2fa1dcbbcde49e65eef2,"paniere dati aperti",,
+4a270fe86b84ce0ac96bf3973b51e6b9,"pubblica amministrazione",,
+a33607fa0ff950b92768d701519d9a74,realtime,,
+9a06920b0d53ec886393b25004337a75,"regioni province autonome",,
+6da4e8da739746cd39d1781207098e0f,"ricerca scientifica e tecnologica",,
+c5f63fe2d93199a631ff3f97d5ef6b37,salute,,
+0ea654097621ab92ff3aaa64530649c0,"semplificazione amministrativa",,
+e750c57d8bd050e11fef7b77d99aa30c,"serie temporali",,
+77e2d5d423562445a4df27f2d2250a25,"servizio civile",,
+3b5c4948cfdbb9ea9e40eeb75040cb9a,"tempo libero",,
+a7d17f959e3e31694e3080c05f2e25cc,trasparenza,,
+c642f435ee0d9396891b6364ed149723,trasporti,,
+67ce3ec7f3572a77774ae6335376c4b1,turismo,,
+d0469cda06140bbafedf71f5f6c2e317,volontariato,,
+cdeb5b429a76f3ad4a4d968603279c9a,"Standard di conformità",Konformitätsstandards,"Compliance standards"
+7dad74a9f247ceb3f6604b6e4e23265b,ANNCSU,,
+2eb35d602b41ed7c5aa637e4e9716a9a,"ANNSCU (indirizzi secondo lo standard ISTAT-Agenzia delle Entrate)",,
+0efb965f9c708fa6453f5c9aa1059ae2,"ANNSCU (indirizzi)",,
+a5b318c59ef28ef6263a99c18942f56a,"Indirizzi secondo standard ANNCSU",,
+6a03955e34669f5814f123f3ad84b5ad,SKOS,SKOS,SKOS
+5c2d3c727781aef8d8e6eaad31edb91e,Stati,,
+b12440ee938bd0f92c4d41875db456a8,Completo,,
+95bcb4e68dae4ac60127c630734e1d30,Deprecato,,
+939f65ab16b80171fae70ae09b05a061,"In costruzione",,
+15be02b66e6d4bb2c8971a871709b7e4,Ritirato,,

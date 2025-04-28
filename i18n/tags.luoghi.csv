@@ -1,0 +1,188 @@
+id,ita-IT,ger-DE,eng-GB
+c3966d6effdf4528f0b9c288dfb7f0b5,Luoghi,Orte,Places
+218526bb2307bc74fe89c68c869162e6,Ambienti,,
+2a74db11a8e99415244affc51833aee4,"Ambienti aridi",,
+a3e6407feede620dc30c2360d396b462,"Boschi ripariali",,
+debbdf055ebcc4e99456f3a859d453c6,"Corsi d'acqua",,
+f05a3eacc935e76fb595d74fdb9fa2f5,"Prati umidi",,
+ad57dfbfd04e23c6f55de0947b115d01,"Rive dei laghi",,
+d7214d045fdef5199a5d4fdc0c19aedd,Stagni,,
+ded87005aa497755dc6014b515095a43,Torbiere,,
+6f2a17f34813bd636a755da232020bcb,"Categorie prevalenti","Verfügbare Kategorien","Prevailing categories"
+a7db2d4451cf609d4828f58d1c8012bb,arte,Kunst,Art
+64e14456d2805341961939cbbcf4f542,filosofia,Philosophie,philosophy
+949965652517aecdf38562617c7b23a8,"ingegneria civile e architettura","Bauingenieurwesen und Architektur","civil engineering and architecture"
+baf240474e369f5fc96b89f236b9d884,"ingegneria dell'informazione",Informationstechnik,"information Engineering"
+422e3b68363683ae7ed1cb224d0b0c96,"ingegneria industriale",Wirtschaftsingenieurwesen,"industrial engineering"
+4782242a86ec2197b42eb21e00edf48c,linguistica,Linguistik,linguistics
+61860e24311b627043b706ad11ec666b,pedagogia,Pädagogik,pedagogy
+b243b71ef744377662cb1cbc54ef78ca,psicologia,Psychologie,psychology
+fdc671169748824d74ff99beb3d68dad,"scienze agrarie",Agrarwissenschaften,"agricultural science"
+c469407a01fbd8d4005b1157f92ef06d,"scienze biologiche",Biowissenschaften,"biological science"
+b3c7df0e52e3d97ed2f7b80c16bc6275,"scienze chimiche",Chemiewissenschaften,"chimical science"
+1cd525315cb8de04111e233854c5b89d,"scienze dell'antichità","Antike Wissenschaften","sciences of antiquity"
+49b860aeeb97cdb20adee1451fa95da2,"scienze della terra",Geowissenschaften,"Earth Science"
+d6fbca5cd6b752a0e8ab0c594af88c56,"scienze economiche e statistiche","Volkswirtschaft und Statistik","economic and statistical sciences"
+550067c597ef598bff3a7c5924b34273,"scienze filologico-letterarie","Philologische und literarische Wissenschaften","philological-literary sciences"
+c68f1965467de77409f999d19412c9fc,"scienze fisiche","Physikalische Wissenschaften","physical sciences"
+fee7389e72d0fa6f7d40b45345a0acc8,"scienze giuridiche",Rechtswissenschaften,"legal sciences"
+edbdb9c0b5754a55ae2e1b15681879fd,"scienze informatiche",Computerwissenschaften,"computer science"
+abad1580fed57eaeeae71575ad24af77,"scienze matematiche","Mathematische Wissenschaften","mathematical sciences"
+af0c908cfec5b6de6ecb17bd9232259d,"scienze mediche","Medizinische Wissenschaften","medical science"
+179d393e8d3a7cd705aa29b5e4842923,"scienze politiche e sociali","Politik- und Sozialwissenschaften","political and social sciences"
+68b0bccaaf719cc2c074399ce0f25702,"scienze storico-artistiche","Geschichts- und Kunstwissenschaften","historical-artistic sciences"
+1e750f8958e076ea70df15207872e5a5,"scienze veterinarie",Veterinärwissenschaften,"veterinary sciences"
+26dca52b15d96ca4d8e617e5a59e8e73,storia,Geschichte,"history science"
+1ac031fc8a7bd67dd977c6ce89f43949,"studi orientali",Orientalistik,"oriental studies"
+d19d711861ad54a80e63f6b12299f789,"Classificazione aree protette",,
+49f6592ba70bbf971f865b9438fe2ddd,"Biotopo non istituito",,
+3af43217d83e483b8f6f524701b82793,"Riserva Naturale Provinciale",,
+f0dd184fe955ca98bd07fc384d04ecc4,"Riserva locale",,
+b025041b819fa18de3caa97090ec8366,"Sito di Importanza Comunitaria - SIC",,
+f73e88588e7f77e7fc0c279a26a7b46f,"Zona Speciale di Conservazione - ZSC",,
+c22a1e0e54597ddb340d50bb0994f24a,"Zona di Protezione Speciale - ZPS",,
+9a0d21c33dcc44dc31b128377e085a4e,"Database dei luoghi",,
+ce60ccd64d2a97a04495766aca0557f4,"Anagrafe delle biblioteche italiane - codice ISIL",,
+254fe6581bbd0ad0243f0971673889e9,Natura2000,,
+4f39fd353e2f44a85625509de26038b1,"OPENDATA Ministero della cultura (ex DBUnico)",,
+d1526e3269c0874ad5938d943c5c201c,"Riserve locali",,
+2535f9b832c44c2ccf949c9d19745cc0,"Riserve provinciali - Biotopi non istituiti",,
+a831f1c0d9dbdbb0d7771fc7ad01f543,"Tipi di luogo","Art von Orten","Types of places"
+9481690ad8fdacce14d9b6cd5bc11f1c,"Aree archeologiche","Archäologische Gebiete","Archaeological areas"
+c694b002ed88c189a55635cb1b77b082,"Area archeologica","Archäologisches Gebiet","Archeological area"
+c04ed94b9dcdf061515267453554cf1d,"Sito archeologico","Archäologische Stätte","Archaeological site"
+9985e52a234ed814d04a26cbdadf68c3,"Bellezze naturali",Naturschönheiten,"Natural beauties"
+0d9ae42c06129be9ccd63ba9224a56fe,"Corso d'acqua",Wasserlauf,River
+f13fb03b6810c3c17e93c8b113ad351b,"Costa marittima",Meeresküste,"Maritime coast"
+081f7cd2e45c50ac017bb96213b1639f,"Foresta e bosco","Wald und Gehölz","Forest and wood"
+40e1949b3c2cb714161966da9fe40999,"Ghiacciaio e circo glaciale",Gletscher,
+e889c070f2ebcb5022622216ba4fb772,Lago,See,Lake
+870d84967b4c0d50df70ddf7ff406b3b,Montagna,Berg,Mountain
+d8c584ab9d05095a36c871773b490587,"Riserva naturale",Naturschutzgebiet,"Natural reserve"
+387ddd9180b46d2868f1b2e2bc63a1bd,Vulcano,Vulkan,Volcano
+81e6d5d77e5a6d2965f34e8edd5c1e9e,"Centri istituzionali e amministrativi","Öffentliche Ämter und einrichtungen",
+b383e3b22667a8241d184bbbd425f436,Contrada,Ortsteil,
+4099bb60de03b10489d6e96f4c67fe42,"Sede municipale","Sitz des Organs",
+3c327475455ada728e9557bc138b6c25,"Sportello per il pubblico",Bürgerschalter,
+stazione_polizia_carabinieri,"Stazione di Polizia / Carabinieri","Polizeistation / Carabinieri","Police station / Carabinieri"
+cb98e07860d6979a40b43ad8e5cfcfad,Ufficio,Amt,
+06d4e85e745b80000d8be6c762f804cc,"Centri per l'assistenza e la tutela sociale","Zentren für soziale Unterstützung und Schutz","Centers for assistance and social protection"
+17cfc02458d8d160b746c728a4b3f2e6,Ambulatorio,Sprechzimmer,
+ef884e8c957ab9e967e9eca3c48cff92,"Centro di accoglienza",Aufnahmezentrum,"Reception center"
+fd57ffeae3de29d4613d61dcd519a88b,Ospedale,Krankenhaus,Hospital
+e91b51cf24d16fd90a5f14e5704d0814,Ospizio,Altersheim,
+9ebae2d16703abb2d730e574d2f0d58e,"Centri per la cultura",Kulturzentrum,"Centers for culture"
+a6ff5846955e76c22f90fb6a56bc143f,Acquario,Aquarium,Acquarium
+da6723a2bc8d6f2813d76a0ebe24e0bd,Anfiteatro,Amphitheater,Amphitheater
+b50fc20f6bfbea54dd59d6ece2ebb1af,Archivio,Archiv,Archive
+fe8edfa5d3cc4bab7ef3c6e71fdb301c,"Asilo nido",Kinderhort,Nursery
+66b477c2df3e7ef89a560a6c9b77b873,Auditorium,Auditorium,Auditorium
+7010203eabcfd7aa638a849db8513509,Biblioteca,Bibliothek,Library
+4b89d790a61304f3883b0753f8e5f893,Cinema,Kino,Cinema
+c3a984bf95aaf08e2bd3faf99f66e5de,Galleria,Galerie,Gallery
+818b8875b8364e1b2fdc41b2e6bd6348,Museo,Museum,Museum
+9e79cc4b195674b2029eb16827b80137,Osservatorio,Beobachtungsstelle,Observatory
+923042f3c84220874b0d8f8bf176866e,"Parco archeologico","Archäologischer Park","Archaeological park"
+e7c36b3bbb5b8b39f7602b41e98102ac,Pinacoteca,Kunstgalerie,"Picture gallery"
+c509f129e3ac43f3248da5c71997782a,Planetario,Planetarium,Planetary
+f7093078c6f2115e02de146c7515e882,Scuola,Schule,School
+1f367c3dfb12de8ef083a59377a31033,Teatro,Theater,Theater
+7842fe81d75d6ea7ccde3d6765f5f76e,Università/Facoltà,Universität/Fakultät,"University / Faculty"
+b4aa79ad6a2199d7703adadbcd912831,"Edifici di culto",Gebetsorte,"Buildings of worship"
+fae587ee23b225a8f447c4aab6d134b0,Abbazia,Abtei,Abbey
+e4b85c69b0280c30a7ab96a26f1c39ea,Basilica,Basilika,Basilica
+1bb59e81a1d3c7afc1b5a8b4bad6b73f,Battistero,Baptisterium,Baptistery
+c74e2dfe437a78143280864fc6c9eceb,Campanile,Glockenturm,"Bell tower"
+440b70aa5431cd2ea1ab91a47aca0339,Cappella,Kapelle,Chapel
+004a0e98b741c3754226efc7912af6a7,Catacomba,Katakombe,Catacomb
+4e0a159208705c24fe54689596b2952b,Cattedrale,Kathedrale,Cathedral
+8ef487b209cd3ca6dbcb5c9fb8d24e21,Chiesa,Kirche,Church
+32e72896f5aadc030bffbeb445b2c8e7,Cimitero,Friedhof,Graveyard
+dfd905d56c45bce2769dfe46607d48d4,Convento,Kloster,Convent
+3008e8095e315d827ee0ac775baa4d94,Duomo,Kathedrale,Duomo
+94e1f9b6cc58d8a6934f5f63c15e459e,Edicola,Zeitungsstand,"News kiosk"
+dda707ad1276ed70fcac34fff272f21e,Eremo,Klause,Hermitage
+979cf9eab842331ad8c9a134746ca144,Mausoleo,Mausoleum,Mausoleum
+9a5b9f187ef2d4b50624fa74a3f4f3dc,Monastero,Kloster,Monastery
+7eb80e05836a95793b5be8322b3cb93f,Santuario,Wallfahrtsstätte,sanctuary
+44c71d726148299522458507678c09ba,Sepolcro,Grabstätte,Tomb
+fcb0a5f6d5a5de60c9878922663cbcfc,Sinagoga,Synagoge,Synagogue
+7b468613f9dff79ea313d782a4866646,Tempio,Tempel,Temple
+b10194fb67e1cdfcb7868aa05e2f3d9c,"Edifici residenziali e uffici","Öffentliche Gebäude","Residential buildings"
+ad7ff72c6a113dc8b1a511e51325aeee,Masseria,Bauernhaus,
+b3b1b03f945af841b48cbfd4f553251c,Palazzo,Gebäude,Building
+643123d2e863b81d7d9aa365a48d097b,Trullo,Trullo,Trullo
+91c16b8d780ff01ddc0cb2ab7487b387,Villa,Villa,Villa
+d1cff0dd6d3d8ebd7cd66856adbce022,"Infrastrutture e impianti","Infrastruktur und Einrichtungen","Infrastructures and systems"
+27579adfd83a8e4d83eb63acc8874e12,Acquedotto,Aquädukt,Aqueduct
+7c970c365e37bbbfdd96d9549b3a207c,Aeroporto,Flughafen,
+cf2f177dbc0ca16d5b649944b9776799,"Centro di raccolta",Sammelstelle,"Collection center"
+23d70e08cb9add0298849d56975e6e80,Stazione,Bahnhof,
+parcheggio,Parcheggio,Parkplatz,"Car park"
+8192693d46c99ce33e9660427d4cef87,Porto,Hafen,Port
+1d84429fd21a54af8760d90aeb44367d,"Punto wifi",Internet-Zugriffspunkte,
+2c32b96f54e473f9c501915b49a09894,"Luoghi per il commercio",Geschäft,"Places for trade"
+nominatim_shop,"Esercizio commerciale",Geschäft,Shop
+d59c6cbe4a724645afb85fc876fa6164,Farmacia,Apotheke,Pharmacy
+nominatim_books,Libreria,Buchgeschäft,"Book Shop"
+a723f6bb59a5a1affbe68559d9ff2b59,Mercato,Markt,Market
+91b355c851a0fe62ee6900a7e1269538,"Luoghi per lo sport e il tempo libero","Sport- und Freizeitanlagen","Places for sport and leisure"
+b68afdf8c9da2904126e0db477307812,"Campo sportivo",Sportplatz,"Sports field"
+palestra,Palestra,Turnhalle,Gymnasium
+84e3fa29635369ac63aef3260dde6bb8,"Casa da gioco",Kasino,
+a16b06446b51287b224aa081d5ecf139,"Circolo sportivo",Sportverein,"Sports club"
+f339f9297e9d68e4319c7e2993e5453b,Piazza,Platz,Square
+79f6ef01d7cf05679a6912e50ab144bd,Piscina,Schwimmbad,Pool
+9f9a9474ce1f7eb5c91b05d283944dfc,Stadio,Stadion,Stage
+437c595f571a8291c0cb07159c482c96,Terme,Heilbad,"Thermal baths"
+613d610e0f60bbbbab19f19a59e5b942,Monumenti,Denkmäler,Monuments
+c7a08a5552f22e1ddc45fa8913ba5723,Arco,Bogen,Arch
+0e8b6c56ab7d21368252f908e4000e35,Colonna,Säule,Column
+e6277e7e4c59fb897330d6a3f69e4c00,"Complesso monumentale","Monumentaler Komplex","Monumental complex"
+e94b9d14808f681d154e7db90b4957a2,Monumento,Monument,Monument
+7eda483bdc6c8d1a5b5992687cfeea5a,Obelisco,Obelisk,Obelisk
+c708a56c4d89c8ce5bd17210b1a489de,"Parchi e giardini","Parkanlagen und Gärten","Parks and gardens"
+f4d938dce8844c11d8a2b712f3ce2aef,Belvedere,Belvedere,Viewpoint
+411b24a9c6aa556ebdb4be543a1bf2f2,Giardino,Garten,Garden
+07493463c845fbe73c44aad670ed2d82,Parco,Park,Park
+74b6ff1f79ec11ef6dae4d7a58fb513f,Viale,Allee,Avenue
+e6485b7b8a2c2fe0ae843c1fe89645b0,"Rocche e castelli","Festungen und Schlösser","Fortresses and castles"
+496505a5c89a36cec271bdba84189029,Castello,Schloss,Castle
+440fdfbccaee2b12e11e7596d1433246,Fortezza,Festung,Fortress
+1a926a13707c4671740cc73a3b30f270,Mura,Mauern,Walls
+b734e1980c301265ce079790250b0988,Roccaforte,Festung,Stronghold
+db87786813ba8a89f95de420b6b9a4a5,Torre,Turm,Tower
+36dfd03389f4228da8bf602160dfd9cd,"Strutture ricettive",Unterkunftseinrichtungen,Accommodation
+3126fb60974e8cf9fccaf2d147c1b6da,Albergo,Hotel,Inn
+b605ceb6f8e74e07f4376422c891e29a,Foresteria,Gästehaus,"Guest quarters"
+malga,Malga,Hütte,Shieling
+07950f638135cc94e9d8334ebb0eeca7,Rifugio,Schutzhütte,Refuge
+1d58b9a0c683815683229a4abfa034b5,"Rifugio per animali",Tierheim,"Animal shelter"
+0c9bc9a8a2c7991ef218e08a6719b06b,"Tipologie aree protette",,
+2544a2d87f218ff11466bb1fa1f5a177,"Ambiente fluviale",,
+d44c4d306a8007ae706591c58f759d16,Bosco,,
+78b552e4b4ced6b6d2e270f66187e3b1,"Bosco igrofilo",,
+9af25b70cbf9f788c0be8ea7c57ad4d9,"Bosco ripariale",,
+7d89de8de2cb05d3d93f5a97eea11a71,"Buche di ghiaccio",,
+9626340d3754ba173822206fb6dba8df,Canneto,,
+04dbbda37a4622434d2a50f1601b7751,"Conca torboso-palustre",,
+d561ec08f2caa648f4f2d5435c2810ba,"Greto fluviale",,
+c362faa57459fbe979fa565fa42739c4,"Immensa frana",,
+f76bd05214d5f49ea523e899822e095f,Lago,,
+796dcf04d60b931319c21f9babc1436f,Ontaneta,,
+fff77450def15c91470e65179e2eaba8,Palude,,
+1abd3c08fe19274dd2acb6986bffe341,"Palude derivata da lago prosciugato",,
+142ec15f552615259f645d5d22b7cb27,"Palude perilacuale",,
+f439cc2c351fb67da7f96d6e8bf86c59,"Praterie umide",,
+29017667e7f168ec4358c4a69abdf805,"Prati umidi",,
+7a763f81d7e4d163f8f618347cecf236,"Risorgiva di fondovalle",,
+536a7849ffa2e995a74e4e60ab066ab1,"Riva lacustre",,
+51487d3de9c2e52407b6e2df281a7488,"Rupi boscate",,
+f599700ed721a7045e8dc0ee2f52f41c,"Stagni in ambiente detritico e xerico",,
+49b98d8adae94d8b4dba55acc1021d2c,Stagno,,
+7ad8a7ada181cf53ba3b41c4df7f9b9a,Torbiera,,
+3a54fef7015ccd4cfb66f036512fafa3,"Vegetazione ripariale",,
+ba173b25a38896fa059e7cd8c9db7439,"Vegetazione umida e fluviale",,
+91df7ac8ba9ee2ce2bb3f3629fcaa7e2,"Vegetazione xerofila su detrito",,
+2c81b7a6029db2b13dd2f047df4085d3,"Zona rupestre",,
+5e99a9ca5bc4ef749d59abd515ab03a9,"Zona xerica",,
