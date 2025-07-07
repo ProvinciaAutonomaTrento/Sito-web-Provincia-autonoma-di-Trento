@@ -1,0 +1,7 @@
+PHP=/usr/local/bin/php
+
+0 */6 * * *  application cd /var/www/html && $PHP runcronjobs.php -q -sbackend frequent > /var/www/html/var/log/cron.log
+0 */4 * * *  application cd /var/www/html && $PHP runcronjobs.php -q -sbackend sqliimport_run > /var/www/html/var/log/cron.log
+0 1,15 * * * application cd /var/www/html && $PHP runcronjobs.php -q -sbackend changesection > /var/www/html/var/log/cron.log
+
+#leave new line before EOF

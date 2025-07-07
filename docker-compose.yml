@@ -1,0 +1,264 @@
+---
+
+services:
+
+  app:
+#    image: registry.gitlab.com/opencity-labs/sito-istituzionale/cid-pat/cms:latest-x86
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - minio
+      - postgres
+      - solr
+      - redis
+      - createbuckets
+    volumes:
+      - dfs:/mnt/efs/cluster-opencitypat
+    environment:
+      PHP_MEMORY_LIMIT: '512M'
+      PHP_POST_MAX_SIZE: '80M'
+      PHP_UPLOAD_MAX_FILESIZE: '80M'
+      PHP_TIMEOUT: 800
+      php.session.save_handler: redis
+      php.session.save_path: '"tcp://redis:6379"'
+      FPM_PM_MAX_CHILDREN: 100
+      PHP_DATE_TIMEZONE: 'Europe/Rome'
+      FPM_PM_MIN_SPARE_SERVERS: 1
+      FPM_PM_START_SERVERS: 5
+      FPM_PM_MAX_SPARE_SERVERS: 8
+      FPM_MAX_REQUESTS: 2000
+      WEB_DOCUMENT_ROOT: /var/www/html
+      EZ_ROOT: /var/www/html
+      EZ_INSTANCE: opencitypat
+
+      ADMIN_EMAIL: 'info@example.com'
+      ADMIN_PASSWORD: 'changethispassword'
+
+      NO_FORCE_CONTAINER_REFRESH: 1
+      RUN_REINDEX_CONTENT: 'false'
+
+      # ### Impostazioni nome sito
+      EZINI_site__SiteSettings__SiteName: "Provincia"
+      EZINI_site__SiteSettings__SiteURL: "opencity-pat.localtest.me"
+      EZINI_openpa__InstanceSettings__NomeAmministrazioneAfferente: "OpenCityLabs"
+      EZINI_openpa__InstanceSettings__UrlAmministrazioneAfferente: "https://opencityitalia.it/"
+      EZINI_openpa__GeneralSettings__theme: blue
+
+      # ### Impostazioni var dir (unica per istanza)
+      EZINI_site__FileSettings__VarDir: var/opencitypat
+
+      # ### Impostazioni varnish
+      EZINI_site__HTTPHeaderSettings__CustomHeader: 'enabled'
+      EZINI_site__VarnishSettings__VarnishHostName: 'varnish'
+      EZINI_site__VarnishSettings__VarnishPort: '6081'
+      EZINI_site__HTTPHeaderSettings__X-Instance__/: 'opencitypat'
+
+      # ### Impostazioni db
+      EZINI_site__DatabaseSettings__Server: postgres
+      EZINI_site__DatabaseSettings__Port: 5432
+      EZINI_site__DatabaseSettings__User: openpa
+      EZINI_site__DatabaseSettings__Password: openp4ssword
+      EZINI_site__DatabaseSettings__Database: opencitypat
+
+      # ### Impostazioni db cluster (da impostare come db)
+      EZINI_file__eZDFSClusteringSettings__DBHost: postgres
+      EZINI_file__eZDFSClusteringSettings__DBPort: 5432
+      EZINI_file__eZDFSClusteringSettings__DBUser: openpa
+      EZINI_file__eZDFSClusteringSettings__DBPassword: openp4ssword
+      EZINI_file__eZDFSClusteringSettings__DBName: opencitypat
+      EZINI_file__eZDFSClusteringSettings__MountPointPath: '/mnt/efs/cluster-opencitypat'
+      CLUSTER_STORAGE_GATEWAY_PATH: "extension/openpa/classes/clustering/gateway.php"
+
+      # ### Impostazioni solr
+      EZINI_solr__SolrBase__SearchServerURI: 'http://solr:8983/solr/opencitypat'
+
+      # ### Impostazioni mail
+      EZINI_site__MailSettings__AdminEmail: 'no-reply@opencontent.it'
+      EZINI_site__MailSettings__EmailSender: ''
+      EZINI_site__MailSettings__TransportServer: mailhog
+      EZINI_site__MailSettings__TransportPort: 1025
+      # Mailhog does not accept the STARTTLS command
+      EZINI_site__MailSettings__TransportConnectionType: ''
+      EZINI_site__MailSettings__TransportUser: ''
+      EZINI_site__MailSettings__TransportPassword: ''
+      # # The FQDN, used by extended HELO See part "4.1.1.1  Extended HELLO (EHLO) or HELLO (HELO)" of http://www.faqs.org/rfcs/rfc2821.html
+      EZINI_site__MailSettings__SenderHost: localhost
+
+      # ### Impostazioni avanzate per il cluster con DFSBackend: OpenPADFSFileHandlerDFSDispatcher
+      # # Endpoint del server Redis
+      EZINI_openpa_cluster__RedisDFSBackendSettings__Endpoint: 'tcp://redis:6379'
+
+      # # Bucket e Regione S3
+      EZINI_openpa_cluster__AWSS3DFSBackendSettings__Region: 'eu-west-1'
+      EZINI_openpa_cluster__AWSS3DFSBackendSettings__Bucket: 'opencitypat-bucket'
+
+      # # Solo per configurazioni di emulatori di S3
+      # Dominio che serve le immagini pubbliche: se non configurato è s3-<Region>.amazonaws.com
+      EZINI_openpa_cluster__AWSS3DFSBackendSettings__Endpoint: 'http://minio:9000'
+      EZINI_openpa_cluster__AWSS3DFSBackendSettings__ServerUri: 'opencity-pat.localtest.me'
+      EZINI_openpa_cluster__AWSS3DFSBackendSettings__UsePathStyleEndpoint: 'enabled'
+
+      # # Se non si utilizza la strategia ec2_instance-profiles (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html)
+      # # occorre configurare AWS_PROFILE oppure AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY,AWS_SESSION_TOKEN:
+      AWS_ACCESS_KEY_ID: AKIAIOSFODNN7EXAMPLE
+      AWS_SECRET_ACCESS_KEY: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+  varnish:
+    image: registry.gitlab.com/opencity-labs/sito-istituzionale/varnish:main
+    restart: unless-stopped
+    labels:
+      traefik.enable: 'true'
+      traefik.http.services.opencitypat.loadbalancer.server.port: 6081
+      traefik.http.routers.opencitypat-https.rule: Host(`opencity-pat.localtest.me`)
+      traefik.http.routers.opencitypat-https.entrypoints: websecure
+      traefik.http.routers.opencitypat-https.tls: null
+      traefik.http.routers.opencitypat-https.middlewares: 'frame-allow-self, goodheaders'
+      traefik.http.routers.opencitypat-http.rule: Host(`opencity-pat.localtest.me`)
+      traefik.http.routers.opencitypat-http.entrypoints: web
+      traefik.http.middlewares.frame-allow-self.headers.customFrameOptionsValue: 'SAMEORIGIN'
+    depends_on:
+      - app
+    environment:
+      VARNISH_BACKEND_GRACE: 10m
+      VARNISH_BACKEND_HOST: app
+      VARNISH_BACKEND_PORT: 80
+      # attivo ma non gestibile dal vcl iniettato
+      VARNISH_CACHE_STATIC_FILES: 1
+      VARNISH_DEFAULT_TTL: 300s
+      VARNISH_ERRORS_GRACE: 60s
+
+  solr:
+    image: registry.gitlab.com/opencity-labs/sito-istituzionale/solr:main
+    command: '-s /opt/ez'
+    restart: unless-stopped
+    volumes:
+      - 'solrdata:/opt/ez/ezp-default/data'
+    environment:
+      EZ_INSTANCE: opencitypat
+    labels:
+      traefik.enable: 'true'
+      traefik.http.services.opencitypat-solr.loadbalancer.server.port: 8983
+      traefik.http.routers.opencitypat-solr-http.rule: Host(`solr-opencity-pat.localtest.me`)
+      traefik.http.routers.opencitypat-solr-http.entrypoints: web
+
+  postgres:
+    image: 'postgres:14.17-alpine'
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: opencitypat
+      POSTGRES_USER: openpa
+      POSTGRES_PASSWORD: openp4ssword
+    volumes:
+      - 'pgdata:/var/lib/postgresql/data'
+      - './docker/postgres:/docker-entrypoint-initdb.d'
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready --user openpa --dbname opencitypat"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  traefik:
+    image: 'traefik:2.0'
+    command:
+      - '--global.checknewversion=true'
+      - '--global.sendanonymoususage=true'
+      # - '--log.level=DEBUG'
+      - '--api'
+      - '--api.dashboard=true'
+      - '--accesslog'
+      - '--providers.file.directory=/etc/traefik/dynamic_conf'
+      - '--providers.docker=true'
+      - '--providers.docker.exposedbydefault=false'
+      - '--providers.docker.defaultrule=Host(`{{ normalize .Name }}.localtest.me`)'
+      - '--entrypoints.web.address=:80'
+      - '--entryPoints.web.forwardedHeaders.insecure'
+      - '--entrypoints.websecure.address=:443'
+    ports:
+      - '80:80'
+      - '443:443'
+    labels:
+      traefik.enable: 'true'
+      traefik.http.services.traefik-server.loadbalancer.server.port: 8080
+      traefik.http.routers.traefik-https.entrypoints: websecure
+      traefik.http.routers.traefik-https.service: api@internal
+      traefik.http.routers.traefik-https.rule: Host(`traefik.localtest.me`)
+      traefik.http.routers.traefik-https.tls: null
+      traefik.http.routers.traefik-https.middlewares: goodheaders
+      traefik.http.routers.traefik-http.entrypoints: web
+      traefik.http.routers.traefik-http.service: api@internal
+      traefik.http.routers.traefik-http.rule: Host(`traefik.localtest.me`)
+      traefik.http.routers.traefik-http.middlewares: gotossl
+      # traefik.http.middlewares.goodheaders.headers.frameDeny: 'true'
+      traefik.http.middlewares.goodheaders.headers.customFrameOptionsValue: 'SAMEORIGIN'
+      traefik.http.middlewares.goodheaders.headers.stsSeconds: 31536000
+      traefik.http.middlewares.goodheaders.headers.stsIncludeSubdomains: 'true'
+      traefik.http.middlewares.goodheaders.headers.forceStsHeader: 'true'
+      traefik.http.middlewares.goodheaders.headers.contentTypeNosniff: 'true'
+      traefik.http.middlewares.goodheaders.headers.featurePolicy: vibrate 'self'
+      traefik.http.middlewares.goodheaders.headers.referrerPolicy: strict-origin-when-cross-origin
+      traefik.http.middlewares.goodheaders.headers.browserXssFilter: 'true'
+      traefik.http.middlewares.goodheaders.headers.customresponseheaders.Cache-control: 'no-cache, private'
+      traefik.http.middlewares.gotossl.redirectscheme.scheme: https
+    volumes:
+      - ./docker/traefik/certs:/tools/certs
+      - ./docker/traefik/config.yml:/etc/traefik/dynamic_conf/conf.yml
+      - '/var/run/docker.sock:/var/run/docker.sock'
+
+  mailhog:
+    image: mailhog/mailhog
+    # must be explicit about what port to proxy from traefik, because the service expose two ports
+    labels:
+      traefik.enable: 'true'
+      traefik.http.services.opencitypat-mailhog.loadbalancer.server.port: 8025
+      traefik.http.routers.opencitypat-mailhog-https.rule: Host(`mailhog.localtest.me`)
+      traefik.http.routers.opencitypat-mailhog-https.entrypoints: websecure
+      traefik.http.routers.opencitypat-mailhog-https.tls: null
+      traefik.http.routers.opencitypat-mailhog-https.middlewares: goodheaders
+      traefik.http.routers.opencitypat-mailhog-http.rule: Host(`mailhog.localtest.me`)
+      traefik.http.routers.opencitypat-mailhog-http.entrypoints: web
+
+  redis:
+    image: redis:latest
+    volumes:
+      - redisdata:/data
+    ports:
+      - 6379:6379
+
+  minio:
+    image: minio/minio
+    volumes:
+      - miniodata:/data
+    command: server --console-address ":9001" /data
+    environment:
+      MINIO_ROOT_USER: AKIAIOSFODNN7EXAMPLE
+      MINIO_ROOT_PASSWORD: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+    labels:
+      traefik.enable: 'true'
+      traefik.http.services.minio.loadbalancer.server.port: 9000
+      traefik.http.routers.opencitypat-minio-https.rule: Host(`opencity-pat.localtest.me`) && PathPrefix(`/opencitypat-bucket`)
+      traefik.http.routers.opencitypat-minio-https.entrypoints: websecure
+      traefik.http.routers.opencitypat-minio-https.tls: null
+      traefik.http.routers.opencitypat-minio-https.middlewares: goodheaders
+      traefik.http.routers.opencitypat-minio-http.rule: Host(`opencity-pat.localtest.me`) && PathPrefix(`/opencitypat-bucket`)
+      traefik.http.routers.opencitypat-minio-http.entrypoints: web
+
+  createbuckets:
+    image: minio/mc
+    depends_on:
+      - minio
+    entrypoint: >
+      /bin/sh -c "
+      while ! /usr/bin/mc alias set minio http://minio:9000 AKIAIOSFODNN7EXAMPLE wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY; do echo 'Wait minio to startup...' && sleep 0.1; done;
+      /usr/bin/mc mb minio/opencitypat-bucket;
+      /usr/bin/mc anonymous set public minio/opencitypat-bucket;
+      exit 0;
+      "
+
+
+
+volumes:
+  dfs:
+  solrdata:
+  pgdata:
+  miniodata:
+  redisdata:

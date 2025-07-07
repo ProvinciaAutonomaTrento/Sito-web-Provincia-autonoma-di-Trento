@@ -1,0 +1,128 @@
+{
+  "name": "opencity-labs/sito-istituzionale",
+  "description": "Opencity Italia - Sito istituzionale",
+  "license": "GPL-2.0",
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.2",
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-iconv": "*",
+    "ext-json": "*",
+    "ext-libxml": "*",
+    "ext-mbstring": "*",
+    "ext-pcre": "*",
+    "ext-reflection": "*",
+    "ext-session": "*",
+    "ext-simplexml": "*",
+    "ext-spl": "*",
+    "ext-xmlwriter": "*",
+    "arnebratt/batchtool": "1.*",
+    "aws/aws-sdk-php": "3.319.*",
+    "composer/installers": "*",
+    "dpobel/ezclasslists-ls": "1.*",
+    "ezsystems/ezfind-ls": "dev-master",
+    "ezsystems/ezflow-ls-extension": "~5.3",
+    "ezsystems/ezgmaplocation-ls-extension": "5.3.1.1",
+    "ezsystems/ezmbpaex-ls": "5.3.3.4",
+    "ezsystems/ezmultiupload-ls": "~5.3",
+    "ezsystems/ezprestapiprovider-ls": "~5.3",
+    "ezsystems/ezpublish-legacy": "2020.1000.14",
+    "ezsystems/ezpublish-legacy-installer": "dev-composer-2",
+    "ezsystems/ezscriptmonitor-ls": "dev-master",
+    "ezsystems/ezstarrating-ls-extension": "v5.3.3",
+    "ezsystems/eztags-ls": "2.2.1",
+    "ezsystems/ezwt-ls-extension": "~5.3",
+    "google/apiclient": "2.11.0",
+    "lasserafn/php-initial-avatar-generator": "dev-master",
+    "lolautruche/sqliimport": "~1.3",
+    "maxh/php-nominatim": "2.2.0",
+    "opencontent/cjwnewsletter-ls": "3.*",
+    "opencontent/ezchangeclass-ls": "1.*",
+    "opencontent/ezpostgresqlcluster-ls": "dev-event_handler",
+    "opencontent/eztagdescription-ls": "1.*",
+    "opencontent/ezuserformtoken-ls": "dev-master",
+    "opencontent/jcremoteid-ls": "1.*",
+    "opencontent/ocbinarynullparser-ls": "1.*",
+    "opencontent/ocbootstrap-ls": "2.*",
+    "opencontent/occhangeobjectdate-ls": "2.*",
+    "opencontent/occhart-ls": "2.*",
+    "opencontent/occodicefiscale-ls": "dev-master",
+    "opencontent/occsvimport-ls": "3.6.*",
+    "opencontent/occustomfind-ls": "2.*",
+    "opencontent/oceasyontology-ls": "dev-master",
+    "opencontent/oceditorialstuff-ls": "2.*",
+    "opencontent/ocembed-ls": "1.*",
+    "opencontent/ocevents-ls": "1.*",
+    "opencontent/ocexportas-ls": "1.*",
+    "opencontent/ocextensionsorder-ls": "1.*",
+    "opencontent/ocfoshttpcache-ls": "dev-master",
+    "opencontent/ocgdprtools-ls": "1.*",
+    "opencontent/oci18n": "dev-master",
+    "opencontent/ocinigui-ls": "1.*",
+    "opencontent/ocinstaller": "dev-master",
+    "opencontent/ocmaintenance-ls": "2.*",
+    "opencontent/ocmap-ls": "1.*",
+    "opencontent/ocmultibinary-ls": "3.1.*",
+    "opencontent/ocopenapi-ls": "1.*",
+    "opencontent/ocopendata-ls": "2.*",
+    "opencontent/ocopendata_forms-ls": "1.*",
+    "opencontent/ocopendata_forms_design-ls": "1.*",
+    "opencontent/ocoperatorscollection-ls": "2.*",
+    "opencontent/ocrecaptcha-ls": "1.*",
+    "opencontent/ocrss-ls": "1.*",
+    "opencontent/ocsearchtools-ls": "1.*",
+    "opencontent/ocsupport-ls": "dev-master",
+    "opencontent/octranslate": "1.*",
+    "opencontent/octranslate_deepl": "1.*",
+    "opencontent/ocwebhookserver-ls": "1.1.*",
+    "opencontent/opencontent-project-installer": "~1.0",
+    "opencontent/openpa-ls": "3.*",
+    "opencontent/openpa_bootstrapitalia-ls": "2.*",
+    "opencontent/openpa_newsletter-ls": "2.*",
+    "opencontent/openpa_userprofile-ls": "dev-master"
+  },
+  "replace": {
+    "ezsystems/ezdemo-ls-extension": "*",
+    "zetacomponents/webdav": "*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Opencontent/ezpublish-legacy.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Opencontent/ezpublish-legacy-installer.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Opencontent/ezfind.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Opencontent/ezgmaplocation-ls-extension.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Opencontent/ezmbpaex.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Opencontent/ezpostgresqlcluster.git"
+    }
+  ],
+  "extra": {
+    "ezpublish-legacy-dir": "html"
+  },
+  "config": {
+    "vendor-dir": "html/vendor",
+    "discard-changes": true,
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/installers": true,
+      "ezsystems/ezpublish-legacy-installer": true,
+      "php-http/discovery": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+
+  app:
+    environment:
+      EZINI_openpa__ImageSettings__FlyImgBaseUrl: https://static-opencity-pat.localtest.me/upload/
+      EZINI_openpa__ImageSettings__BackendBaseUrl: minio:9000
+
+  flyimg:
+    image: flyimg/flyimg-build:1.1.36
+    volumes:
+      - './docker/flyimg/parameters.yml:/var/www/html/config/parameters.yml'
+    environment:
+      MAGICK_TMPDIR: /var/www/html/var/tmp
+      MAGICK_THREAD_LIMIT: 8
+      # Set maximum amount of memory map in bytes to allocate for the pixel cache. When this limit is exceeded, the image pixels are cached to disk (see MAGICK_DISK_LIMIT).
+      MAGICK_MAP_LIMIT: '512MB'
+      # Set maximum amount of memory in megabytes to allocate for the pixel cache from the heap. When this limit is exceeded, the image pixels are cached to memory-mapped disk (see MAGICK_MAP_LIMIT).
+      MAGICK_MEMORY_LIMIT: '1024MB'
+      MAGICK_WIDTH_LIMIT: '100MP'
+      MAGICK_HEIGHT_LIMIT: '100MP'
+    labels:
+      traefik.enable: 'true'
+      traefik.docker.network: "traefik2"
+      traefik.http.services.opencitypat-flyimg.loadbalancer.server.port: 80
+      traefik.http.routers.opencitypat-flyimg-https.rule: Host(`static-opencity-pat.localtest.me`)
+      traefik.http.routers.opencitypat-flyimg-https.entrypoints: websecure
+      traefik.http.routers.opencitypat-flyimg-https.tls: null
+      traefik.http.routers.opencitypat-flyimg-https.middlewares: goodheaders
+      traefik.http.routers.opencitypat-flyimg-http.rule: Host(`static-opencity-pat.localtest.me`)
+      traefik.http.routers.opencitypat-flyimg-http.entrypoints: web

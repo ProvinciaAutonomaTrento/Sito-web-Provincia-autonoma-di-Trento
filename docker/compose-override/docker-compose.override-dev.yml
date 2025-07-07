@@ -1,0 +1,81 @@
+version: "3.7"
+
+services:
+
+  app:
+    environment:
+      # Modalità sviluppo: abilita il debug e disabilita la cache
+      EZINI_site__OverrideSettings__Cache: 'disabled'
+      EZINI_site__DesignSettings__DesignLocationCache: 'disabled'
+      EZINI_site__ContentSettings__ViewCaching: 'disabled'
+      EZINI_site__TemplateSettings__DevelopmentMode: 'enabled'
+      EZINI_site__TemplateSettings__ShowXHTMLCode: 'enabled'
+      EZINI_site__TemplateSettings__TemplateCache: 'disabled'
+      EZINI_site__TemplateSettings__TemplateCompile: 'disabled'
+      EZINI_site__TemplateSettings__ShowUsedTemplates: 'enabled'
+      EZINI_site__DebugSettings__DebugOutput: 'enabled'
+      EZINI_site__DebugSettings__DebugRedirection: 'enabled'
+      EZINI_site__DebugSettings__DebugToolbar: 'enabled'
+      EZINI_site__DebugSettings__AlwaysLog_0: 'debug'
+      EZINI_site__DebugSettings__AlwaysLog_1: 'warning'
+      EZINI_site__DebugSettings__AlwaysLog_2: 'error'
+      EZINI_site__DebugSettings__AlwaysLog_3: 'notice'
+      EZINI_site__DebugSettings__AlwaysLog_4: 'strict'
+      EZINI_ezjscore__eZJSCore__Packer: 'disabled'
+
+# per abilitare la condivisione del codice:
+# - eseguire composer update nella macchina host,
+# - scommentare le impostazioni di volumes
+# - riavviare cpn docker-compose up -d
+#    volumes:
+#      - ./html/kernel:/var/www/html/kernel:rw,cached
+#      - ./html/lib:/var/www/html/lib:rw,cached
+#      - ./html/extension:/var/www/html/extension:rw,cached
+#      - ./html/vendor:/var/www/html/vendor:rw,cached
+#      - ./conf.d/ez/siteaccess:/var/www/html/settings/siteaccess:rw,cached
+#      - ./conf.d/ez/override:/var/www/html/settings/override:rw,cached
+#      - ./composer.json:/var/www/composer.json
+#      - ./composer.lock:/var/www/composer.lock
+
+# per sviluppare bypassando varnish:
+#  - scommentare le seguenti righe
+#  - commentare le righe relative nel service varnish in docker-compose.yml
+#    labels:
+#        traefik.enable: 'true'
+#        traefik.http.services.opencitypat-nginx.loadbalancer.server.port: 80
+#        traefik.http.routers.opencitypat-nginx-https.rule: Host(`opencity-pat.localtest.me`)
+#        traefik.http.routers.opencitypat-nginx-https.entrypoints: websecure
+#        traefik.http.routers.opencitypat-nginx-https.tls: null
+#        traefik.http.routers.opencitypat-nginx-http.rule: Host(`opencity-pat.localtest.me`)
+#        traefik.http.routers.opencitypat-nginx-http.entrypoints: web
+
+  pgweb:
+    image: sosedoff/pgweb
+    environment:
+      DATABASE_URL: postgres://openpa:openp4ssword@postgres:5432/opencitypat?sslmode=disable
+    depends_on:
+      - postgres
+    labels:
+      traefik.enable: 'true'
+      traefik.http.services.opencitypat-pgweb.loadbalancer.server.port: 8081
+      traefik.http.routers.opencitypat-pgweb-https.rule: Host(`pgweb-opencity-pat.localtest.me`)
+      traefik.http.routers.opencitypat-pgweb-https.entrypoints: websecure
+      traefik.http.routers.opencitypat-pgweb-https.tls: null
+      traefik.http.routers.opencitypat-pgweb-https.middlewares: goodheaders
+      traefik.http.routers.opencitypat-pgweb-http.rule: Host(`pgweb-opencity-pat.localtest.me`)
+      traefik.http.routers.opencitypat-pgweb-http.entrypoints: web
+
+  redisweb:
+    image: marian/rebrow
+    volumes:
+      - redisdata:/data
+    labels:
+      traefik.enable: 'true'
+      traefik.http.services.opencitypat-redisweb.loadbalancer.server.port: 5001
+      traefik.http.routers.opencitypat-redisweb-https.rule: Host(`redisweb-opencity-pat.localtest.me`)
+      traefik.http.routers.opencitypat-redisweb-https.entrypoints: websecure
+      traefik.http.routers.opencitypat-redisweb-https.tls: null
+      traefik.http.routers.opencitypat-redisweb-https.middlewares: goodheaders
+      traefik.http.routers.opencitypat-redisweb-http.rule: Host(`redisweb-opencity-pat.localtest.me`)
+      traefik.http.routers.opencitypat-redisweb-http.entrypoints: web
+
