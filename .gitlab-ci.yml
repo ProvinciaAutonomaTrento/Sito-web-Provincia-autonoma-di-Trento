@@ -1,0 +1,24 @@
+stages:
+    - build
+    - test
+    - deploy
+    - review
+    - dast
+    - staging
+    - canary
+    - production
+    - incremental rollout 10%
+    - incremental rollout 25%
+    - incremental rollout 50%
+    - incremental rollout 100%
+    - performance
+    - cleanup
+    - push
+
+include:
+    - project: 'opencity-labs/product'
+      ref: main
+      file: '.gitlab/ci/devops.yml'
+
+# vim: set noet sw=4 ts=4:
+
