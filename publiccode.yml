@@ -93,6 +93,9 @@ description:
             - "Gestione di informazioni geografiche con Nominatim (geocoder) e\nOpenStreetMap (rappresentazione)"
             - 'Integrazione rapida con OpenCity Italia - Stanza del Cittadino'
         screenshots:
-            - images/homepage.png
+            - images/modello-regioni-01.png
+            - images/modello-regioni-02.png
+            - images/modello-regioni-03.png
+
         apiDocumentation: 'https://www.provincia.tn.it/openapi/doc'
         documentation: ''
