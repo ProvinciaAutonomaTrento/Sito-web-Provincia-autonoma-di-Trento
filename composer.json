@@ -1,6 +1,6 @@
 {
-  "name": "opencity-labs/sito-istituzionale",
-  "description": "Opencity Italia - Sito istituzionale",
+  "name": "opencity-labs/cid-pat",
+  "description": "Provincia autonoma di Trento Progetto Bandiera PNC",
   "license": "GPL-2.0",
   "minimum-stability": "dev",
   "require": {
