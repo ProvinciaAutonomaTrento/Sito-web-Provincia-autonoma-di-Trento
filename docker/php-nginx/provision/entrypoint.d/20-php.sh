@@ -175,6 +175,8 @@ else
     echo "[warning] EZ_INSTANCE not found"
 fi
 
+ADMIN_EMAIL=${ADMIN_EMAIL:-'false'}
+ADMIN_PASSWORD=${ADMIN_PASSWORD:-'false'}
 if [ -n "$ADMIN_EMAIL" ] && [ -n "$ADMIN_PASSWORD" ]; then
   php extension/openpa_bootstrapitalia/bin/set_admin.php --mail=$ADMIN_EMAIL --password=$ADMIN_PASSWORD
 else
