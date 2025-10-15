@@ -3,7 +3,6 @@
 services:
 
   app:
-#    image: registry.gitlab.com/opencity-labs/sito-istituzionale/cid-pat/cms:latest-x86
     build: .
     restart: unless-stopped
     depends_on:
@@ -253,6 +252,7 @@ services:
       /usr/bin/mc anonymous set public minio/opencitypat-bucket;
       exit 0;
       "
+
 
 
 

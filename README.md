@@ -30,18 +30,14 @@ Per maggiori informazioni è possibile:
 
 * visitare l'[ambiente di produzione](https://www.provincia.tn.it/)
 * consultare il [manuale utente](https://manuale.opencontent.it)
-
-## API
-
-* [Endpoint API dell'ambiente demo](https://www.provincia.tn.it/api/openapi/)
-* [Documentazione API](https://www.provincia.tn.it/openapi/doc)
+* visitare la [documentazione API](https://www.provincia.tn.it/openapi/doc)
 
 ## Stato del progetto
 
 Il prodotto è *stabile* e *production ready* e usato in produzione.
 Lo sviluppo avviene in modo costante, sia su richiesta degli Enti utilizzatori, sia su iniziativa autonoma del *maintainer*.
 
-### Come provare il protale
+### Come provare il portale
 
 Per avere un ambiente completo di demo è necessario avere Docker installato
 sul proprio desktop. Una volta che docker è disponibile clonare il repository e posizionarvisi nella cartella radice. 
@@ -56,7 +52,12 @@ Il prototipo sarà disponibile ai seguenti indirizzi:
 
 * [https://opencity-pat.localtest.me](https://opencity-pat.localtest.me)
 * [https://opencity-pat.localtest.me/backend](https://opencity-pat.localtest.me/backend), per l'area riservata agli
-  amministratori
+  amministratori (l'utente di default con cui si accede è `admin`)
+* [http://solr-opencity-pat.localtest.me/solr/](http://solr-opencity-pat.localtest.me/solr/), per l'interfaccia amministrativa
+  del motore di ricerca Solr
+* [http://traefik.localtest.me](https://traefik.localtest.me) per l'interfaccia amministrativa di Traefik
+* [http://mailhog.localtest.me](http://mailhog.localtest.me/), le email inviate in questo ambiente non vengono consegnate 
+ma sono visibili in questa interfaccia web
 
 E' possibile fare accesso come amministratore usando l'account:
 * utente:  `admin`
@@ -67,26 +68,6 @@ E' possibile fare accesso come amministratore usando l'account:
 >quindi al primo collegamento si ottiene un warning
 > con quasi tutti i moderni browser.
 
-### Come creare un ambiente di sviluppo locale
-
-Per avere un ambiente completo di sviluppo clonare
-il repository e dalla directory principale dare i comandi:
-
-```bash
-cp docker/compose-override/docker-compose.override-dev.yml docker-compose.override.yml
-docker compose up -d
-```
-
-Il prototipo sarà disponibile ai seguenti indirizzi:
-
-* [https://opencity-pat.localtest.me](https://opencity-pat.localtest.me)
-* [https://opencity-pat.localtest.me/backend](https://opencity-pat.localtest.me/backend), per l'area riservata agli
-  amministratori (l'utente di default con cui si accede è `admin`)
-* [http://solr-opencity-pat.localtest.me/solr/](http://solr-opencity-pat.localtest.me/solr/), per l'interfaccia amministrativa
-  del motore di ricerca Solr
-* [http://traefik.localtest.me](https://traefik.localtest.me) per l'interfaccia amministrativa di Traefik
-* [http://mailhog.localtest.me](http://mailhog.localtest.me/), le email inviate in questo ambiente
-  sono visibili in questa interfaccia web
 
 Il funzionamento del sistema è configurato per funzionare solo con il protocollo https.
 Il certificato usato per tutti i domini è un wildcard self-signed certificate sul dominio `*.localtest.me`, quindi al
@@ -126,6 +107,16 @@ il dump del database contenente una installazione pienamente funzionante
 dell'applicativo e i file di configurazione necessari per il motore di
 ricerca.
 
+### Come creare un ambiente di sviluppo locale
+
+Per avere un ambiente completo di sviluppo clonare
+il repository e dalla directory principale dare i comandi:
+
+```bash
+cp docker/compose-override/docker-compose.override-dev.yml docker-compose.override.yml
+docker compose up -d
+```
+
 ### Struttura del Repository
 
 Il repository contiene i seguenti file:
@@ -138,7 +129,7 @@ composer.lock
 Il repository non contiene direttamente il codice applicativo, contiene
 invece il file delle dipendenze PHP (`composer.json`) che elenca tutti i componenti
 necessari all'applicazione: il CMS eZ Publish, le estensioni dello stesso
-utilizzate e tra queste l'estensione opencity che implementa le funzionalità
+utilizzate e tra queste l'estensione `openpa_bootstrapitalia` che implementa le funzionalità
 più rilevanti.
 
 Con un comando `composer install` dalla stessa directory è possibile ottenere il codice dell'applicativo
@@ -170,10 +161,8 @@ Nel file `docker-compose.yml` vengono inoltre utilizzati:
 * Traefik per il routing tra i diversi container
 * Minio per lo storage dei file
 
-Le dipendenze del sistema operativo sono risolte nell'immagine da cui origina l'immagine di OpenCity,
-ovvero [opencontentcoop/ezpublish](https://hub.docker.com/r/opencontentcoop/ezpublish).
-Per i dettagli su questa immagine si rimanda al [repository](https://www.github.com/OpencontentCoop/docker-ezpublish) ad
-essa dedicata.
+Le dipendenze del sistema operativo sono risolte nell'immagine da cui origina l'immagine ,
+ovvero [webdevops/php-nginx:7.2-alpine](https://hub.docker.com/layers/webdevops/php-nginx/7.2-alpine).
 
 Le configurazioni di Solr sono impostate
 nell'[immagine dedicata](https://gitlab.com/opencity-labs/sito-istituzionale/solr)
@@ -187,15 +176,6 @@ Con il comando che segue:
 
 si esegue la build dell'immagine docker dell'applicazione: vengono installate le dipendenze
 del sistema operativo e successivamente composer e le dipendenze applicative.
-
-### Continuous Integration
-
-Il software ha una pipeline di CI, che esegue una build ad ogni commit, disponibile alla seguente url:
-
-https://gitlab.com/opencity-labs/sito-istituzionale/cid-pat/cms/-/pipelines
-
-Le build delle immagini docker sono disponibili
-nel [Registry](https://gitlab.com/opencity-labs/sito-istituzionale/cid-pat/cms/container_registry) di GitLab.
 
 ## Copyright (C)
 
