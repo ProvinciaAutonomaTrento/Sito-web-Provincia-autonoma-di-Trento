@@ -1,0 +1,101 @@
+publiccodeYmlVersion: 0.4.0
+name: ''
+applicationSuite: ''
+url: 'https://gitlab.com/opencity-labs/sito-istituzionale/cid-pat/cms'
+releaseDate: ''
+developmentStatus: stable
+softwareType: standalone/web
+platforms:
+    - web
+usedBy:
+    - 'Provincia autonoma di Trento'
+categories:
+    - content-management
+dependsOn:
+    open:
+        -
+            name: PHP
+            version: 7.2.34
+        -
+            name: PostgreSQL
+            versionMin: '10'
+            versionMax: '14'
+        -
+            name: Solr
+            version: 4.10.4
+        -
+            name: Varnish
+            versionMin: '4.0'
+        -
+            name: Traefik
+            versionMin: '2.0'
+        -
+            name: Docker
+            versionMin: '20.0'
+isBasedOn: 'https://gitlab.com/opencity-labs/sito-istituzionale/cms'
+softwareVersion: 1.1.3
+logo: images/opencity-italia.png
+maintenance:
+    type: community
+    contacts:
+        -
+            email: gabriele.francescotto@opencitylabs.it
+            name: 'Gabriele Francescotto'
+            phone: '+390461917437'
+            affiliation: 'Opencity Labs Srl'
+legal:
+    license: LGPL-2.0-only
+    mainCopyrightOwner: 'Provincia autonoma di Trento'
+    repoOwner: 'OpenCity Labs srl'
+intendedAudience:
+    scope:
+        - local-authorities
+        - government
+    countries:
+        - it
+localisation:
+    localisationReady: true
+    availableLanguages:
+        - it
+it:
+    piattaforme:
+        spid: false
+        cie: false
+        anpr: false
+        pagopa: false
+    conforme:
+        modelloInteroperabilita: true
+        gdpr: true
+        lineeGuidaDesign: true
+        misureMinimeSicurezza: true
+description:
+    it:
+        shortDescription: 'Il sito web della Provincia autonoma di Trento'
+        longDescription: "È un modello di sito web avanzato che\ngarantisce un’esperienza utente completamente basata su linee guida,\nprototipi, architettura dell’informazione previsti dal Dipartimento per la\nTrasformazione Digitale in collaborazione con AgID (Agenzia per l’Italia\nDigitale) nel 2024.\n"
+        features:
+            - "Interfacce utente basate sul kit Designers italia con\naggiornamenti costanti"
+            - "Raccolta dei feedback degli utenti sulla chiarezza informativa delle\npagine del sito"
+            - "Gestione collaborativa dei contenuti (bozze, workflow di pubblicazione,\nversioning)"
+            - "Interfacce redattore per la modifica rapida di contenuti (menù di\nnavigazione per sezioni)"
+            - "Interfacce per la creazione rapida di contenuti (visualizzazione dei\nsoli campi obbligatori)"
+            - "Pubblicazione automatica in amministrazione trasparente senza doppio\ninserimento dei contenuti"
+            - "Sistema avanzato di creazione di relazioni tra contenuti senza inserire\nle informazioni più volte"
+            - "Sistema avanzato di editing e rappresentazione di dataset (tabella,\ncalendario e mappa)"
+            - "Sistema veloce di classificazione dei contenuti basata su standard\nitaliani ed europei"
+            - 'Supporto multilingue'
+            - "Utilizzabile in modalità SaaS (soluzione qualificata ACN:\nhttps://www.acn.gov.it/portale/w/sa-3874 )"
+            - "API in pubblicazione per qualsiasi contenuto (es.: integrazione albo\npretorio)"
+            - "API in consultazione e scrittura (es.: pubblicazione su siti terzi degli\neventi)"
+            - "Motore di ricerca che sfrutta la strutturazione dei contenuti per\nrestituire risultati pertinenti"
+            - 'Funzionalità di ricerca avanzata con filtri e ordinamento dei dati'
+            - "Generazione automatica di dataset (metadati DCAT-AP_IT) aggiornati in\ntempo reale (REST API)"
+            - 'Possibilità di integrazione con PDND (erogatore dati)'
+            - "Gestione di informazioni geografiche con Nominatim (geocoder) e\nOpenStreetMap (rappresentazione)"
+            - 'Integrazione rapida con OpenCity Italia - Stanza del Cittadino'
+        screenshots:
+            - images/modello-regioni-01.png
+            - images/modello-regioni-02.png
+            - images/modello-regioni-03.png
+
+        apiDocumentation: 'https://www.provincia.tn.it/openapi/doc'
+        documentation: ''
