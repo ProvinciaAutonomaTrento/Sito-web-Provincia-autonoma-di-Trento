@@ -1,11 +1,5 @@
 # Portale istituzionale
 
-[![pipeline status](https://gitlab.com/opencity-labs/sito-istituzionale/cid-pat/cms/badges/main/pipeline.svg)](https://gitlab.com/opencity-labs/sito-istituzionale/cid-pat/cms/commits/main)
-[![license](https://img.shields.io/badge/license-GPL-blue.svg)](https://gitlab.com/opencity-labs/sito-istituzionale/cid-pat/cms/-/blob/main/LICENSE)
-[![issues](https://img.shields.io/badge/Issues-open-red?logo=gitlab)](https://gitlab.com/opencity-labs/sito-istituzionale/cid-pat/cms/-/issues)
-[![docker](https://img.shields.io/badge/docker-ready-blue?logo=docker)](https://gitlab.com/opencity-labs/sito-istituzionale/cid-pat/cms/container_registry)
-[![developersitalia](https://img.shields.io/badge/forum-italia-blue)](https://forum.italia.it/c/software-open-source-per-la-pa/49)
-
 Sito Istituzionale della Provincia autonoma di Trento, conforme alle linee guida
 di [Design Italia](https://docs.italia.it/italia/designers-italia).
 
@@ -134,7 +128,7 @@ più rilevanti.
 
 Con un comando `composer install` dalla stessa directory è possibile ottenere il codice dell'applicativo
 pronto all'uso (si veda
-anche [Dockerfile](https://gitlab.com/opencity-labs/sito-istituzionale/cid-pat/cms/-/blob/main/Dockerfile))
+anche [Dockerfile](https://github.com/ProvinciaAutonomaTrento/Sito-web-Provincia-autonoma-di-Trento/blob/main/Dockerfile))
 
 Il file `Dockerfile` e le directory `/docker` e `/conf.d` contengono file di supporto per la creazione delle immagini
 Docker dell'applicativo.
