@@ -1,5 +1,5 @@
 publiccodeYmlVersion: 0.4.0
-name: Modello sito web Province e Regioni
+name: Modello di sito web provinciale e regionale
 applicationSuite: Opencity Italia
 url: https://github.com/ProvinciaAutonomaTrento/Sito-web-Provincia-autonoma-di-Trento
 isBasedOn: https://gitlab.com/opencity-labs/sito-istituzionale/cms
@@ -22,7 +22,7 @@ intendedAudience:
     - government
 description:
   it:
-    localisedName: Modello sito web Province e Regioni
+    localisedName: Modello di sito web provinciale e regionale
     shortDescription: Il sito web di una Provincia o Regione italiana
     longDescription: >
       È un modello di sito web avanzato per le Province e le Regioni italiane,
