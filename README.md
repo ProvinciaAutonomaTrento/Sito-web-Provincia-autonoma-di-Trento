@@ -22,9 +22,9 @@ Strumento ideale per le redazioni distribuite: ciascun redattore detiene permess
 
 Per maggiori informazioni è possibile:
 
-* visitare l'[ambiente di produzione](https://www.provincia.tn.it/)
-* consultare il [manuale utente](https://manuale.opencontent.it)
-* visitare la [documentazione API](https://www.provincia.tn.it/openapi/doc)
+* visitare l'[ambiente di produzione](https://www.provincia.tn.it?utm_source=pat-repo)
+* consultare il [manuale utente](https://docs.opencityitalia.it/redattori/modello-province-e-regioni/il-modello-di-sito-provinciale-e-regionale?utm_source=pat-repo)
+* visitare la [documentazione API](https://www.provincia.tn.it/openapi/doc?utm_source=pat-repo)
 
 ## Stato del progetto
 
