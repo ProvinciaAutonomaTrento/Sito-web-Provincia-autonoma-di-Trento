@@ -1,10 +1,10 @@
 publiccodeYmlVersion: 0.4.0
-name: Modello di sito web provinciale e regionale
+name: Sito web Regioni e Province autonome - versione Provincia autonoma di Trento
 applicationSuite: Opencity Italia
 url: https://github.com/ProvinciaAutonomaTrento/Sito-web-Provincia-autonoma-di-Trento
 isBasedOn: https://gitlab.com/opencity-labs/sito-istituzionale/cms
 softwareVersion: 1.0.0
-releaseDate: 2025-10-15
+releaseDate: 2025-07-15
 logo: images/opencity-italia.png
 platforms:
   - web
@@ -22,99 +22,182 @@ intendedAudience:
     - government
 description:
   it:
-    localisedName: Modello di sito web provinciale e regionale
-    shortDescription: Il sito web di una Provincia o Regione italiana
-    longDescription: >
-      È un modello di sito web avanzato per le Province e le Regioni italiane,
-      che garantisce un’esperienza utente completamente basata su linee guida,
-      prototipi, architettura dell’informazione previsti dal Dipartimento per la
-      Trasformazione Digitale. Il modello è stato sviluppato utilizzando il
-      Design System .italia e utilizza alcuni componenti Bootstrap Italia per il
-      miglioramento dell'esperienza d'uso e dell'accessibilità 
+    localisedName: Sito web Regioni e Province autonome - versione Provincia
+      autonoma di Trento
+    shortDescription: Il modello di sito web Opencity per Regioni e Province
+      autonome applicato alla Provincia autonoma di Trento
+    longDescription: >-
+      È un modello di sito web avanzato per le Regioni e le Province autonome
+      italiane, che garantisce un'**esperienza utente completamente basata su
+      linee guida, prototipi, architettura dell'informazione previsti dal
+      Dipartimento per la Trasformazione Digitale**. Il modello è stato
+      sviluppato utilizzando il Design System .italia e utilizza alcuni
+      componenti Bootstrap Italia per il miglioramento dell'esperienza d'uso e
+      dell'accessibilità
 
-      La progettazione dell’architettura informativa è stata basata sul Modello
-      Comuni del Dipartimento della Trasformazione Digitale, con cui condivide
-      diverse interfacce e funzioni.
 
-      L’esperienza di navigazione dei contenuti (testi, immagini, mappe,
+      La progettazione dell'architettura informativa è stata basata sul [Modello
+      Comuni](https://designers.italia.it/modelli/comuni/) del Dipartimento
+      della Trasformazione Digitale, con cui condivide diverse interfacce e
+      funzioni.
+
+
+      Le principali novità rispetto all'architettura del modello Comuni sono:
+
+      - **l'ampliamento della sezione "Amministrazione"**, introducendo in
+      particolare sotto-sezioni dedicate alla [storia
+      dell'ente](https://docs.opencityitalia.it/redattori/modello-province-e-regioni/raccontare-la-storia-dellente),
+      ai [bandi di
+      concorso](https://docs.opencityitalia.it/redattori/modello-province-e-regioni/lavorare-nellente-concorso-pubblico),
+      ai [documenti di
+      programmazione](https://www.provincia.tn.it/Amministrazione/Programmazione)
+      e ai
+      [progetti](https://docs.opencityitalia.it/redattori/modello-province-e-regioni/gestire-i-progetti-dellente);
+
+      - la **sostituzione della sezione "Vivere il Comune" con la sezione
+      "**[**Dati e
+      statistiche**](https://docs.opencityitalia.it/redattori/modello-province-e-regioni/pubblicare-dati-e-statistiche-dellente-dataset)**"**,
+      progettata per accedere ai dati pubblicati attraverso cataloghi di dati
+      aperti, portali web e la classe "Dataset";
+
+      - l'**introduzione della classe di contenuto "**[**Concorso
+      pubblico**](https://docs.opencityitalia.it/redattori/modello-province-e-regioni/lavorare-nellente-concorso-pubblico)**"**,
+      progettata per migliorare l'accesso alle informazioni dei bandi di
+      reclutamento del personale, monitorare lo stato delle procedure e
+      consultare i documenti pubblicati;
+
+      - l'**introduzione della classe "**[**Progetto
+      pubblico**](https://docs.opencityitalia.it/redattori/modello-province-e-regioni/gestire-i-progetti-dellente)**"**,
+      finalizzata alla comunicazione dei progetti dell'ente, evidenziando
+      obiettivi e stato di avanzamento, tempistiche, attori coinvolti, fonti di
+      finanziamento, notizie e documenti;
+
+      - l'**evoluzione della classe
+      "**[**Dataset**](https://docs.opencityitalia.it/redattori/modello-province-e-regioni/pubblicare-dati-e-statistiche-dellente-dataset)",
+      compatibile con lo standard DCAT-AP-IT e con la possibilità di
+      visualizzare i dati in formato tabellare, mappa, calendario e contatore,
+      aggiornandoli direttamente da file CSV o Google fogli;
+
+      - **l'ampliamento della tassonomia degli
+      "**[**Argomenti**](https://www.provincia.tn.it/Argomenti)**"** per
+      permettere di descrivere tutti gli ambiti di intervento dell'ente,
+      utilizzando i termini presenti nel [catalogo
+      Eurovoc](https://op.europa.eu/it/web/eu-vocabularies) dell'Unione Europea.
+
+
+      L'esperienza di navigazione dei contenuti (testi, immagini, mappe,
       calendari) è favorita:
 
-      - dalla presenza di menù di navigazione per categorie e per argomenti
 
-      - da un motore di ricerca che restituisce risultati pertinenti sfruttando
-      la forte organizzazione dei contenuti
+      - dalla presenza di **menu di navigazione per categorie e per argomenti**;
+
+      - da un **motore di ricerca** che restituisce risultati pertinenti
+      sfruttando la forte organizzazione dei contenuti;
 
       - da un sistema di relazione tra contenuti di dettaglio che permette
-      all’utente di approfondire le informazioni sulla base dei bisogni
+      all'utente di approfondire le informazioni sulla base dei bisogni
       specifici.
 
-      Ciascuna pagina di dettaglio è strutturata sulla base degli attributi del
-      content type cui appartiene e ha un menù di navigazione che permette di
-      muoversi rapidamente da una sezione all’altra della pagina. L’utente può
-      dare un feedback sulla chiarezza informativa di ciascuna singola pagina
-      del sito.
 
-      La piattaforma segue un approccio basato sulla strutturazione delle
-      informazioni con una classificazione dei contenuti secondo i vocabolari
-      controllati previsti dal modello per i siti comunali e dagli standard
-      europei. Le informazioni (per esempio gli orari di apertura di un ufficio)
-      vengono create una sola volta e vengono pubblicate dal redattore nelle
-      diverse pagine del sito secondo necessità (evitando di scriverle più volte
-      e avendo un unico punto in cui tenerle aggiornate). Allo stesso modo, i
-      contenuti pubblicati sul sito che rispondono a requisiti di trasparenza
-      amministrativa sono presenti anche nella sezione amministrazione
-      trasparente, senza necessità di doppio inserimento. Tutti i contenuti del
-      sito sono disponibili come dataset. La disponibilità di API in scrittura e
-      lettura facilita l’integrazione di contenuti provenienti da fonti esterne
-      (es. albo pretorio) e la pubblicazione dei contenuti su altri siti (es.
-      pubblicazione di luoghi ed eventi su altri siti dell’ente). La
-      strutturazione dei contenuti, infine, favorisce processi e strumenti di
-      migrazione dei contenuti dal vecchio al nuovo sito dell’ente orientati a
-      garantire la qualità del dato.
+      Ciascuna pagina di dettaglio è strutturata sulla base degli attributi del
+      content type cui appartiene e ha un menu di navigazione che permette di
+      muoversi rapidamente da una sezione all'altra della pagina.  
+
+      **L'utente può dare un feedback sulla chiarezza informativa** di ciascuna
+      singola pagina del sito.
+
 
       La piattaforma si caratterizza per una serie di funzionalità che
-      favoriscono il lavoro del redattore costruite su misura per i contenuti
-      del sito di un Ente pubblico e per le esigenze degli uffici della pubblica
-      amministrazione. Una specifica informazione viene pubblicata una sola
-      volta e tenuta aggiornata in un unico punto. Per ciascun tipo di
-      contenuto, una funzione specifica consente al redattore di visualizzare
-      solo i dati obbligatori da inserire in modo da rendere più rapida la
-      pubblicazione. Un menù dedicato al redattore permette di muoversi
-      rapidamente tra le diverse sezioni del contenuto su cui sta lavorando
+      **favoriscono il lavoro del redattore** costruite su misura per i
+      contenuti del sito di un Ente pubblico e per le esigenze degli uffici
+      della pubblica amministrazione:
+
+
+      - **Classificazione dei contenuti e creazione di associazioni tra
+      contenuti** appartenenti a tipologie diverse (ad esempio uffici e servizi)
+      tramite interfacce semplici immediate.
+
+      - Una specifica informazione **viene pubblicata una sola volta e tenuta
+      aggiornata in un unico punto**. Allo stesso modo, i contenuti pubblicati
+      sul sito che rispondono a requisiti di trasparenza amministrativa sono
+      presenti anche nella sezione amministrazione trasparente, senza necessità
+      di doppio inserimento.
+
+      - Per ciascun tipo di contenuto, una funzione specifica consente al
+      redattore di **visualizzare solo i dati obbligatori** da inserire in modo
+      da rendere più rapida la pubblicazione. L'indice permette di **muoversi
+      rapidamente tra le diverse sezioni del contenuto** su cui sta lavorando
       rendendo più rapide le attività di modifica o aggiornamento di contenuti
-      esistenti. Operazioni come la classificazione dei contenuti e la creazione
-      di associazioni tra contenuti appartenenti a tipologie diverse (ad esempio
-      uffici e servizi) sono operazioni semplici. Alcuni accorgimenti consentono
-      di gestire con rapidità attività editoriali tipiche di un sito comunale,
-      come l’aggiornamento degli incarichi amministrativi e politici.
-      Funzionalità specifiche di pubblicazione riguardano i dataset: in questo
-      caso il sistema permette non solo di pubblicare come dataset tutte i
-      contenuti del sito, ma prevede strumenti di editing avanzato che
-      permettono di attribuire un significato ai valori contenuti nel dataset e
-      la conseguente rappresentazione delle informazioni in forma tabellare, di
-      calendario o di mappa. La piattaforma dispone inoltre di un sistema per la
-      gestione multilingua che prevede, tramite l'integrazione con il connettore
-      di DeepL e l'attivazione delle API dedicate, la traduzione automatica dei
-      contenuti della piattaforma.
+      esistenti.
+
+      - Gestione semplice di attività editoriali tipiche di un sito di un ente
+      pubblico, come l'aggiornamento degli incarichi amministrativi e politici.
+
+      - Funzionalità specifiche di **pubblicazione dei dataset:** il sistema
+      permette non solo di pubblicare come dataset tutte i contenuti del sito,
+      ma prevede strumenti di editing avanzato che permettono di attribuire un
+      significato ai valori contenuti nel dataset e la conseguente
+      **rappresentazione delle informazioni in forma tabellare, di calendario o
+      di mappa**.
+
+
+      La piattaforma segue un approccio basato sulla **strutturazione delle
+      informazioni** con una classificazione dei contenuti secondo i vocabolari
+      controllati previsti **dal Catalogo nazionale dati, da Designers Italia e
+      dagli standard europei**.  
+
+      Tutti i contenuti del sito sono disponibili come dataset. La disponibilità
+      di API in scrittura e lettura facilita l'integrazione di contenuti
+      provenienti da fonti esterne (es: uffici e personale dell'ente) e la
+      pubblicazione dei contenuti su altri siti (es. pubblicazione di luoghi ed
+      eventi su altri siti dell'ente). La strutturazione dei contenuti, infine,
+      favorisce processi e strumenti di migrazione dei contenuti dal vecchio al
+      nuovo sito dell'ente orientati a garantire la qualità del dato.
+
+
+      Attraverso due dashboard realizzate su Fogli Google è possibile
+      monitorare:
+
+
+      - i feedback ricevuti dal sistema incorporato nel sito:  
+          [Modello consultazione feedback utenti_satisfy_public_link](https://docs.google.com/spreadsheets/d/14althSTKk_GZ3Slz6ODxhrYpAlQIfkBnP7PthRbDVag/edit?gid=1369546877#gid=1369546877)
+      - i dati di traffico del sito, con delle viste specifiche per pagina e
+      aggregate per ufficio responsabile delle pagine.
+
+
+      Inoltre le API permettono di creare ulteriori strumenti di monitoraggio
+      sui contenuti.
+
+
+      La piattaforma dispone di un **sistema per la gestione multilingua che
+      prevede**, tramite l'integrazione con il connettore di DeepL e
+      l'attivazione delle API dedicate, **la traduzione automatica dei contenuti
+      della piattaforma** e la possibilità di revisionare e modificare
+      manualmente la traduzione.
+
 
       La piattaforma consente infine di gestire permessi di accesso in modo
-      analitico, dando la possibilità di limitare l’attività di un redattore
-      alla modifica di specifiche sezioni. I workflow editoriali sono pensati
-      per produrre contenuti in modo collaborativo, gestendo in modo rigoroso le
-      diverse fasi dalla creazione al salvataggio in bozza fino alla
+      analitico, dando **la possibilità di limitare l'attività di un redattore
+      alla modifica di specifiche sezioni**. I workflow editoriali sono
+      **pensati per produrre contenuti in modo collaborativo,** gestendo in modo
+      rigoroso le diverse fasi dalla creazione al salvataggio in bozza fino alla
       pubblicazione, anche in modalità multilingua.
 
-      Il sito web è pensato per consentire una integrazione semplice con
-      OpenCity Italia - Stanza del Cittadino in modo da arricchire il sito con
-      area personale utente, sistema di prenotazione degli appuntamenti,
-      richiesta di assistenza, segnalazione di un disservizio. Allo stesso modo,
-      il sito web è facilmente integrabile con i servizi digitali di OpenCity
-      Italia in modo da garantire un’esperienza utente fluida e coerente.
 
-      OpenCity Italia - Sito web nasce dall’esperienza di collaborazione con
-      Opencity LABS e Provincia Autonoma di Trento (PAT) per la creazione di un
-      modello di interazione digitale tra cittadini e Province o Regioni
-      italiane. 
+      Il sito web è pensato per consentire una integrazione semplice con
+      [OpenCity Italia - Stanza del
+      Cittadino](https://developers.italia.it/it/software/gitlab.com/opencontent/stanza-del-cittadino/core)
+      i**n modo da arricchire il sito con un'area personale utente, un sistema
+      di prenotazione degli appuntamenti, di richiesta di assistenza e di
+      segnalazione di un disservizio.** Allo stesso modo, il sito web è
+      facilmente integrabile con i servizi digitali di OpenCity Italia in modo
+      da garantire un'esperienza utente fluida e coerente.
+
+
+      Sito web Regioni e Province autonome nasce dall'esperienza di
+      collaborazione tra Opencity LABS e Provincia Autonoma di Trento (PAT) per
+      la creazione di un modello di interazione digitale tra cittadini e Regioni
+      o Province autonome italiane.
     documentation: https://docs.opencityitalia.it/redattori/modello-province-e-regioni/il-modello-di-sito-provinciale-e-regionale?UTM_SOURCE=pat-public-code
     apiDocumentation: https://www.provincia.tn.it/openapi/doc
     features:
@@ -146,12 +229,12 @@ description:
         Sistema veloce di classificazione dei contenuti basata su standard
         italiani ed europei
       - Supporto multilingue
+      - Traduzione automatica multilingua con connettore DeepL
       - |-
         Utilizzabile in modalità SaaS (soluzione qualificata ACN:
         https://www.acn.gov.it/portale/w/sa-3874 )
       - |-
-        API in pubblicazione per qualsiasi contenuto (es.: integrazione albo
-        pretorio)
+        API in pubblicazione per qualsiasi contenuto
       - |-
         API in consultazione e scrittura (es.: pubblicazione su siti terzi degli
         eventi)
@@ -167,6 +250,7 @@ description:
         Gestione di informazioni geografiche con Nominatim (geocoder) e
         OpenStreetMap (rappresentazione)
       - Integrazione rapida con OpenCity Italia - Stanza del Cittadino
+
     screenshots:
       - images/modello-regioni-01.png
       - images/modello-regioni-02.png
