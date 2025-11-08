@@ -1,22 +1,25 @@
-publiccodeYmlVersion: 0.4.0
+publiccodeYmlVersion: 0.5.0
 name: Sito web Regioni e Province autonome - versione Provincia autonoma di Trento
 applicationSuite: Opencity Italia
 url: https://github.com/ProvinciaAutonomaTrento/Sito-web-Provincia-autonoma-di-Trento
 isBasedOn: https://gitlab.com/opencity-labs/sito-istituzionale/cms
 softwareVersion: 1.0.0
 releaseDate: 2025-07-15
-logo: images/opencity-italia.png
+logo: images/logo-pat.png
 platforms:
   - web
 categories:
   - content-management
+organisation:
+  name: OpenCity Labs srl
+  uri: https://www.opencityitalia.it/
 usedBy:
   - Provincia autonoma di Trento
 developmentStatus: stable
 softwareType: standalone/web
 intendedAudience:
   countries:
-    - it
+    - IT
   scope:
     - local-authorities
     - government
@@ -258,7 +261,6 @@ description:
 legal:
   license: LGPL-2.0-only
   mainCopyrightOwner: Provincia autonoma di Trento
-  repoOwner: OpenCity Labs srl
 maintenance:
   type: community
   contacts:
@@ -290,13 +292,8 @@ dependsOn:
       versionMin: "2.0"
     - name: Docker
       versionMin: "20.0"
-it:
+IT:
   countryExtensionVersion: "1.0"
-  conforme:
-    lineeGuidaDesign: true
-    modelloInteroperabilita: true
-    misureMinimeSicurezza: true
-    gdpr: true
   piattaforme:
     spid: false
     cie: false
