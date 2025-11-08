@@ -5,4 +5,4 @@ publiccode:
     stage: check_publiccode
     allow_failure: true
     script:
-      - docker run -i italia/publiccode-parser-go:v4.3.4 /dev/stdin < publiccode.yml  
+      - docker run -i italia/publiccode-parser-go /dev/stdin < publiccode.yml  
