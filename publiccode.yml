@@ -2,7 +2,6 @@ publiccodeYmlVersion: 0.5.0
 name: Sito web Regioni e Province autonome - versione Provincia autonoma di Trento
 applicationSuite: Opencity Italia
 url: https://github.com/ProvinciaAutonomaTrento/Sito-web-Provincia-autonoma-di-Trento
-isBasedOn: https://gitlab.com/opencity-labs/sito-istituzionale/cms
 softwareVersion: 1.0.0
 releaseDate: 2025-07-15
 logo: https://raw.githubusercontent.com/ProvinciaAutonomaTrento/Sito-web-Provincia-autonoma-di-Trento/main/images/logo-pat.png
@@ -234,8 +233,7 @@ description:
       - Supporto multilingue
       - Traduzione automatica multilingua con connettore DeepL
       - |-
-        Utilizzabile in modalità SaaS (soluzione qualificata ACN:
-        https://www.acn.gov.it/portale/w/sa-3874 )
+        Utilizzabile in modalità SaaS [soluzione qualificata ACN](https://www.acn.gov.it/portale/w/sa-6063)
       - |-
         API in pubblicazione per qualsiasi contenuto
       - |-
@@ -260,7 +258,7 @@ description:
       - https://raw.githubusercontent.com/ProvinciaAutonomaTrento/Sito-web-Provincia-autonoma-di-Trento/main/images/modello-regioni-03.png
 legal:
   license: LGPL-2.0-only
-  mainCopyrightOwner: Provincia autonoma di Trento
+  mainCopyrightOwner: Provincia autonoma di Trento  
 maintenance:
   type: community
   contacts:
@@ -294,6 +292,11 @@ dependsOn:
       versionMin: "20.0"
 IT:
   countryExtensionVersion: "1.0"
+  conforme:
+    lineeGuidaDesign: true
+    modelloInteroperabilita: true
+    misureMinimeSicurezza: true
+    gdpr: true  
   piattaforme:
     spid: false
     cie: false
