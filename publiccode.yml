@@ -200,7 +200,7 @@ description:
       collaborazione tra Opencity LABS e Provincia Autonoma di Trento (PAT) per
       la creazione di un modello di interazione digitale tra cittadini e Regioni
       o Province autonome italiane.
-    documentation: https://docs.opencityitalia.it/redattori/modello-province-e-regioni/il-modello-di-sito-provinciale-e-regionale?UTM_SOURCE=pat-public-code
+    documentation: https://docs.opencityitalia.it/manuale-opencity-italia-sito-web-istituzionale-v3/modello-regioni-e-province-autonome/il-modello-di-sito-regionale-e-provinciale?UTM_SOURCE=pat-public-code
     apiDocumentation: https://www.provincia.tn.it/openapi/doc
     features:
       - |-
